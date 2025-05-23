@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n}{trainer} \PYG{o}{=} \PYG{n}{Trainer}\PYG{p}{(}
+    \PYG{n}{model}\PYG{o}{=}\PYG{n}{model}\PYG{p}{,}
+    \PYG{n}{args}\PYG{o}{=}\PYG{n}{training\PYGZus{}args}\PYG{p}{,}
+    \PYG{n}{train\PYGZus{}dataset}\PYG{o}{=}\PYG{n}{train\PYGZus{}dataset}\PYG{p}{,}
+    \PYG{n}{eval\PYGZus{}dataset}\PYG{o}{=}\PYG{n}{val\PYGZus{}dataset}\PYG{p}{,}
+    \PYG{n}{compute\PYGZus{}metrics}\PYG{o}{=}\PYG{n}{compute\PYGZus{}metrics}
+\PYG{p}{)}
+\end{MintedVerbatim}

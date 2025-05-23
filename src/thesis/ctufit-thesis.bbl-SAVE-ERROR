@@ -1,0 +1,3400 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Khurana2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=00c398487189dcaf1dcee130ed215ccf}{%
+           family={Khurana},
+           familyi={K\bibinitperiod},
+           given={Diksha},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ad8525b8eb2f769874e4c72fad9492bc}{%
+           family={Koli},
+           familyi={K\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2ddc74846f7902baefa908f120711b52}{%
+           family={Khatter},
+           familyi={K\bibinitperiod},
+           given={Kiran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e988a0eadd27b7c2f54324c8288ccb27}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Sukhdev},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{fullhash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{fullhashraw}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{bibnamehash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{authorbibnamehash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{authornamehash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{authorfullhash}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \strng{authorfullhashraw}{b703d1a3bc3353e8317de0e19e9f44a8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-7721}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{number}{3}
+      \field{title}{Natural language processing: state of the art, current trends and challenges}
+      \field{volume}{82}
+      \field{year}{2023}
+      \field{pages}{3713\bibrangedash 3744}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1007/s11042-022-13428-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11042-022-13428-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11042-022-13428-4
+      \endverb
+    \endentry
+    \entry{ujc-prirucka}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0212188fa35993c3b4b00ad5d01b29e2}{%
+           family={Ústav\bibnamedelimb pro\bibnamedelimb jazyk\bibnamedelimb český\bibnamedelimb AV\bibnamedelima ČR},
+           familyi={Ú\bibinitperiod\bibinitdelim p\bibinitperiod\bibinitdelim j\bibinitperiod\bibinitdelim č\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim Č\bibinitperiod},
+           given={v.\bibnamedelimi v.\bibnamedelimi i.},
+           giveni={v\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim i\bibinitperiod}}}%
+      }
+      \strng{namehash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{fullhash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{fullhashraw}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{bibnamehash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{authorbibnamehash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{authornamehash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{authorfullhash}{0212188fa35993c3b4b00ad5d01b29e2}
+      \strng{authorfullhashraw}{0212188fa35993c3b4b00ad5d01b29e2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Morfematika}
+      \field{title}{Internetová jazyková příručka}
+      \field{urlday}{29}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://prirucka.ujc.cas.cz/?id=778
+      \endverb
+      \verb{url}
+      \verb https://prirucka.ujc.cas.cz/?id=778
+      \endverb
+    \endentry
+    \entry{w3techs-stats}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b8c88a0b473eb9cabd5c6ab5589ea50d}{%
+           family={W3Techs},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{fullhash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{fullhashraw}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{bibnamehash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{authorbibnamehash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{authornamehash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{authorfullhash}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \strng{authorfullhashraw}{b8c88a0b473eb9cabd5c6ab5589ea50d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Usage statistics of content languages for websites}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://w3techs.com/technologies/overview/content_language
+      \endverb
+      \verb{url}
+      \verb https://w3techs.com/technologies/overview/content_language
+      \endverb
+    \endentry
+    \entry{Hiemstra2009}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2b65fb75969f45d586f748263f41922}{%
+           family={Hiemstra},
+           familyi={H\bibinitperiod},
+           given={Djoerd},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d0536558a000f6cc88d6f7fd6b28eb05}{%
+           family={LIU},
+           familyi={L\bibinitperiod},
+           given={LING},
+           giveni={L\bibinitperiod}}}%
+        {{hash=69fda614f260f289c54ed42205696a3b}{%
+           family={ÖZSU},
+           familyi={Ö\bibinitperiod},
+           given={M.\bibnamedelimi TAMER},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{c2b65fb75969f45d586f748263f41922}
+      \strng{fullhash}{c2b65fb75969f45d586f748263f41922}
+      \strng{fullhashraw}{c2b65fb75969f45d586f748263f41922}
+      \strng{bibnamehash}{c2b65fb75969f45d586f748263f41922}
+      \strng{authorbibnamehash}{c2b65fb75969f45d586f748263f41922}
+      \strng{authornamehash}{c2b65fb75969f45d586f748263f41922}
+      \strng{authorfullhash}{c2b65fb75969f45d586f748263f41922}
+      \strng{authorfullhashraw}{c2b65fb75969f45d586f748263f41922}
+      \strng{editorbibnamehash}{36df0daa484f7b702755f9b33f067368}
+      \strng{editornamehash}{36df0daa484f7b702755f9b33f067368}
+      \strng{editorfullhash}{36df0daa484f7b702755f9b33f067368}
+      \strng{editorfullhashraw}{36df0daa484f7b702755f9b33f067368}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Encyclopedia of Database Systems}
+      \field{isbn}{978-0-387-39940-9}
+      \field{title}{Language Models}
+      \field{year}{2009}
+      \field{pages}{1591\bibrangedash 1594}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1007/978-0-387-39940-9_923
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-0-387-39940-9_923
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-0-387-39940-9_923
+      \endverb
+    \endentry
+    \entry{Wei_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=920fe13fc09e3762146493f1e8a0a12a}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0a4a5ca7f89aa3ce0e33225fd89ff98b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yun-Cheng},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=dc58cd6a24a023ce7177d8f199d47875}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dc3f022a05968ca00ab27dbe41a335ca}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={C.-C.\bibnamedelimi Jay},
+           giveni={C\bibinithyphendelim C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Now Publishers}%
+      }
+      \strng{namehash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{fullhash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{fullhashraw}{be163212b8d91d01002d02c7b5708a82}
+      \strng{bibnamehash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{authorbibnamehash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{authornamehash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{authorfullhash}{be163212b8d91d01002d02c7b5708a82}
+      \strng{authorfullhashraw}{be163212b8d91d01002d02c7b5708a82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2048-7703}
+      \field{journaltitle}{APSIPA Transactions on Signal and Information Processing}
+      \field{number}{2}
+      \field{title}{An Overview of Language Models: Recent Developments and Outlook}
+      \field{volume}{13}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1561/116.00000010
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1561/116.00000010
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1561/116.00000010
+      \endverb
+    \endentry
+    \entry{zhou2023comprehensivesurveypretrainedfoundation}{misc}{}{}
+      \name{author}{19}{}{%
+        {{hash=1e9b71f8cade0a6d2e770ca52781b0fe}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Ce},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9885f16be76c4e68e9c2aaf363a53600}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=02821a48003406ef06e1ee4dfa9fca52}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=94658a16389c695058255d9358d09cdd}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c8c0e2e8882c8cbe0bbeb873ae3dc3df}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yixin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d5e3c419562fb365f03276bd56ded037}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Guangjing},
+           giveni={G\bibinitperiod}}}%
+        {{hash=accfaf086a407bfb746d7875478d9130}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3004cb6c2779bd6516c4f23dfd55d275}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b679eaee9b69b41850bc86ad80ccc4af}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Qiben},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=8bc1c2c96c880e5bde99cc1aab8ec6ef}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Lifang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a7a55881cb261787fefdc7f2311dab03}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=221d23a1cc1702c31044af688c0b7c39}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jianxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9cecf65b3c7f3407db3d54a3f9966210}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15a5322a1b261fe95ac6e04758acf39c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ziwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4b1c47330a6364bd6222728a5bd478e1}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Pengtao},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1fa4dfdd5ecf049d39575fe7ba1ec9f3}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Caiming},
+           giveni={C\bibinitperiod}}}%
+        {{hash=56af930e1f5e2c9a791b71e7b347c0ba}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ed7b2de2f08bfa6638d5d174d55d839b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Philip\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=48972a9b89e478f69f1b1e95205c6278}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Lichao},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{fullhash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{fullhashraw}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{bibnamehash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{authorbibnamehash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{authornamehash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{authorfullhash}{4ea2d287d2e82c29e9335141795fcbcf}
+      \strng{authorfullhashraw}{4ea2d287d2e82c29e9335141795fcbcf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.48550/arXiv.2302.09419
+      \endverb
+      \verb{eprint}
+      \verb 2302.09419
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.48550/arXiv.2302.09419
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.48550/arXiv.2302.09419
+      \endverb
+    \endentry
+    \entry{brown-etal-1992-class}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b269d63ed0974176f251e8034564855e}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Peter\bibnamedelima F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4bbdbda1345838fb46c88bd6afda258c}{%
+           family={Della\bibnamedelima Pietra},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Vincent\bibnamedelima J.},
+           giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=86ecec451b8bc05c59bd3f26a29c7e98}{%
+           family={deSouza},
+           familyi={d\bibinitperiod},
+           given={Peter\bibnamedelima V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=e6c039e6a92e337ce42204aa45b3b26c}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Jenifer\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=619872e7225f85d3b1c89906ec54e067}{%
+           family={Mercer},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{6355950811793085cf6837c9cd921027}
+      \strng{fullhash}{6355950811793085cf6837c9cd921027}
+      \strng{fullhashraw}{6355950811793085cf6837c9cd921027}
+      \strng{bibnamehash}{6355950811793085cf6837c9cd921027}
+      \strng{authorbibnamehash}{6355950811793085cf6837c9cd921027}
+      \strng{authornamehash}{6355950811793085cf6837c9cd921027}
+      \strng{authorfullhash}{6355950811793085cf6837c9cd921027}
+      \strng{authorfullhashraw}{6355950811793085cf6837c9cd921027}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{4}
+      \field{title}{Class-Based \textit{n}-gram Models of Natural Language}
+      \field{volume}{18}
+      \field{year}{1992}
+      \field{pages}{467\bibrangedash 480}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://aclanthology.org/J92-4003/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/J92-4003/
+      \endverb
+    \endentry
+    \entry{radford2018improving}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=a812c46caad94fc8701be37871f303ba}{%
+           family={Radford},
+           familyi={R\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=997c3143c2e5d593e816d2ff704fbf98}{%
+           family={Narasimhan},
+           familyi={N\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e6f76e1a4d058df028530916774ad3a7}{%
+           family={Salimans},
+           familyi={S\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \strng{namehash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{fullhash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{fullhashraw}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{bibnamehash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{authorbibnamehash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{authornamehash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{authorfullhash}{80abb5b04bab16304c71c53141df5a5c}
+      \strng{authorfullhashraw}{80abb5b04bab16304c71c53141df5a5c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Improving language understanding by generative pre-training}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+      \endverb
+    \endentry
+    \entry{devlin2019bert}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=8dde73b4194f5bc4230c4808f3fc1534}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kenton},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b92aa283415413bb8d2a1548716d0c7d}{%
+           family={Toutanova},
+           familyi={T\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{fullhashraw}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{bibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authornamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorfullhashraw}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1810.04805
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1810.04805
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1810.04805
+      \endverb
+    \endentry
+    \entry{huggingface}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e0b6bb846c6a3e0649ce0e3cd9355df3}{%
+           family={HuggingFace},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{fullhash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{fullhashraw}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{bibnamehash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{authorbibnamehash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{authornamehash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{authorfullhash}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \strng{authorfullhashraw}{e0b6bb846c6a3e0649ce0e3cd9355df3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The AI community building the future.}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://huggingface.co
+      \endverb
+      \verb{url}
+      \verb https://huggingface.co
+      \endverb
+    \endentry
+    \entry{webster-kit-1992-tokenization}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=457e6fabb6f8b07129a14d8164eaca3a}{%
+           family={Webster},
+           familyi={W\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=42e26e798df2541bb92a7e47a140ab36}{%
+           family={Kit},
+           familyi={K\bibinitperiod},
+           given={Chunyu},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{fullhash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{fullhashraw}{8160317ab330684e32e13e07ec6a3178}
+      \strng{bibnamehash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{authorbibnamehash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{authornamehash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{authorfullhash}{8160317ab330684e32e13e07ec6a3178}
+      \strng{authorfullhashraw}{8160317ab330684e32e13e07ec6a3178}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{COLING} 1992 Volume 4: The 14th {I}nternational {C}onference on {C}omputational {L}inguistics}
+      \field{title}{Tokenization as the Initial Phase in {NLP}}
+      \field{year}{1992}
+      \verb{urlraw}
+      \verb https://aclanthology.org/C92-4173/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/C92-4173/
+      \endverb
+    \endentry
+    \entry{mielke2021wordscharactersbriefhistory}{misc}{}{}
+      \name{author}{11}{}{%
+        {{hash=ee5753b9bfb53a1d99f7625513731c5e}{%
+           family={Mielke},
+           familyi={M\bibinitperiod},
+           given={Sabrina\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c4c0fac8fa7b6dd8a2ca06fbe9d89839}{%
+           family={Alyafeai},
+           familyi={A\bibinitperiod},
+           given={Zaid},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b8b7ff780dc4ceab48a413de2360c4a1}{%
+           family={Salesky},
+           familyi={S\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod}}}%
+        {{hash=81a5a94e2388c149a73a86381db45e07}{%
+           family={Raffel},
+           familyi={R\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e4c5e162e471d5b16c1ae030c76eda96}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Manan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=15b69d10a4674c92ae5d9daa14dc9e6a}{%
+           family={Gallé},
+           familyi={G\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52a679cb9789ccfc637c93a9e46ac966}{%
+           family={Raja},
+           familyi={R\bibinitperiod},
+           given={Arun},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50e55ce524a6cabd5d5e862c580e6869}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Chenglei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=23955a8e5f3f41ecb3f77e3690ac4959}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Wilson\bibnamedelima Y.},
+           giveni={W\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=9bfabf11a4079cc862dcf0eb698a7cb7}{%
+           family={Sagot},
+           familyi={S\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c3f663800f4a6bf70d0c1549ce939b49}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Samson},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{fullhash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{fullhashraw}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{bibnamehash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{authorbibnamehash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{authornamehash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{authorfullhash}{df19a61c91053680c38a5b29b3122d4a}
+      \strng{authorfullhashraw}{df19a61c91053680c38a5b29b3122d4a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Between words and characters: A Brief History of Open-Vocabulary Modeling and Tokenization in NLP}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2112.10508
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2112.10508
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2112.10508
+      \endverb
+    \endentry
+    \entry{tokenizacemultilingual}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d13ddb81f362351502ac9c1349d987d2}{%
+           family={Jun},
+           familyi={J\bibinitperiod},
+           given={Yennie},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{fullhash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{fullhashraw}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{bibnamehash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{authorbibnamehash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{authornamehash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{authorfullhash}{d13ddb81f362351502ac9c1349d987d2}
+      \strng{authorfullhashraw}{d13ddb81f362351502ac9c1349d987d2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{All languages are NOT created (tokenized) equal}
+      \field{urlday}{4}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20230817165705/https://blog.yenniejun.com/p/all-languages-are-not-created-tokenized#expand
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20230817165705/https://blog.yenniejun.com/p/all-languages-are-not-created-tokenized#expand
+      \endverb
+    \endentry
+    \entry{min2021recentadvancesnaturallanguage}{misc}{}{}
+      \name{author}{9}{}{%
+        {{hash=053ae51ebf315fd5998c29dac42f4fbf}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Bonan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f8419d9fbde162b5ca0991729b4eb9a5}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Hayley},
+           giveni={H\bibinitperiod}}}%
+        {{hash=59cb509416ef4fe7b3a05d97711bb885}{%
+           family={Sulem},
+           familyi={S\bibinitperiod},
+           given={Elior},
+           giveni={E\bibinitperiod}}}%
+        {{hash=87c72085768a0d3e54e33fbea736ae41}{%
+           family={Veyseh},
+           familyi={V\bibinitperiod},
+           given={Amir\bibnamedelimb Pouran\bibnamedelima Ben},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d564830b6141d6a2ed2ca2afebd5cb3b}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Thien\bibnamedelima Huu},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=97461aed93f912772706f338178669a0}{%
+           family={Sainz},
+           familyi={S\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=39f0a6a48ac08d60ef7340dad900caa8}{%
+           family={Agirre},
+           familyi={A\bibinitperiod},
+           given={Eneko},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b8cdea02e0f377f340f425e38c8a9083}{%
+           family={Heinz},
+           familyi={H\bibinitperiod},
+           given={Ilana},
+           giveni={I\bibinitperiod}}}%
+        {{hash=71dbeb61d23cc95a9613d414856523fe}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{fullhash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{fullhashraw}{024832af09450e5dafe12c23cb2661e4}
+      \strng{bibnamehash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{authorbibnamehash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{authornamehash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{authorfullhash}{024832af09450e5dafe12c23cb2661e4}
+      \strng{authorfullhashraw}{024832af09450e5dafe12c23cb2661e4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Recent Advances in Natural Language Processing via Large Pre-Trained Language Models: A Survey}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2111.01243
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2111.01243
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2111.01243
+      \endverb
+    \endentry
+    \entry{Elazar2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=ecf6844c3c1983ee94c878e2b9625fb8}{%
+           family={Elazar},
+           familyi={E\bibinitperiod},
+           given={Yanai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=37db75d7464d8df392b96fc06ca731c4}{%
+           family={Kassner},
+           familyi={K\bibinitperiod},
+           given={Nora},
+           giveni={N\bibinitperiod}}}%
+        {{hash=af55ab54e6ff27527aa5cf74e79c37fc}{%
+           family={Ravfogel},
+           familyi={R\bibinitperiod},
+           given={Shauli},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab8be38c736f011bc98faabd1ea90c94}{%
+           family={Ravichander},
+           familyi={R\bibinitperiod},
+           given={Abhilasha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4c40167d6c8ae2073badfccef0c76767}{%
+           family={Hovy},
+           familyi={H\bibinitperiod},
+           given={Eduard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9a80de0e5ec6df57363aaf321a5d05be}{%
+           family={Schütze},
+           familyi={S\bibinitperiod},
+           given={Hinrich},
+           giveni={H\bibinitperiod}}}%
+        {{hash=33b00f3e2f4f1bb310f1cf8d4a4c500a}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{fullhash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{fullhashraw}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{bibnamehash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{authorbibnamehash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{authornamehash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{authorfullhash}{1ca84a588f8116c564e61c19ca1797ec}
+      \strng{authorfullhashraw}{1ca84a588f8116c564e61c19ca1797ec}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consistency of a model—that is, the invariance of its behavior under meaning-preserving alternations in its input—is a highly desirable property in natural language processing. In this paper we study the question: Are Pretrained Language Models (PLMs) consistent with respect to factual knowledge? To this end, we create ParaRel🤘, a high-quality resource of cloze-style query English paraphrases. It contains a total of 328 paraphrases for 38 relations. Using ParaRel🤘, we show that the consistency of all PLMs we experiment with is poor— though with high variance between relations. Our analysis of the representational spaces of PLMs suggests that they have a poor structure and are currently not suitable for representing knowledge robustly. Finally, we propose a method for improving model consistency and experimentally demonstrate its effectiveness.1}
+      \field{issn}{2307-387X}
+      \field{journaltitle}{Transactions of the Association for Computational Linguistics}
+      \field{month}{12}
+      \field{title}{Measuring and Improving Consistency in Pretrained Language Models}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{1012\bibrangedash 1031}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1162/tacl_a_00410
+      \endverb
+      \verb{eprint}
+      \verb https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00410/1975957/tacl\_a\_00410.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/tacl\_a\_00410
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/tacl%5C_a%5C_00410
+      \endverb
+    \endentry
+    \entry{vaswani2023attentionneed}{misc}{}{}
+      \name{author}{8}{}{%
+        {{hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f2bc899b1160163417da7bf510f15d33}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Lukasz},
+           giveni={L\bibinitperiod}}}%
+        {{hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{fullhash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{fullhashraw}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{bibnamehash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{authorbibnamehash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{authornamehash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{authorfullhash}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \strng{authorfullhashraw}{f82970bbd2bdd7a002d2af62b743d5cc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Attention Is All You Need}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 1706.03762
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1706.03762
+      \endverb
+    \endentry
+    \entry{pfeiffer-etal-2021-adapterfusion}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=080ae0feeabd4b971cde16160cd96ac6}{%
+           family={Pfeiffer},
+           familyi={P\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=42400937a1b329f45656bcc9db609462}{%
+           family={Kamath},
+           familyi={K\bibinitperiod},
+           given={Aishwarya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=488e2f1d5b0a1b8ba791ca6d14c87683}{%
+           family={Rücklé},
+           familyi={R\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ea70b44be1920f6e8c379706bc7d047a}{%
+           family={Gurevych},
+           familyi={G\bibinitperiod},
+           given={Iryna},
+           giveni={I\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=742e524bfa8c7af877bf344b8913bab7}{%
+           family={Merlo},
+           familyi={M\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4617efbcd848eb57fdaeedb766893fd9}{%
+           family={Tiedemann},
+           familyi={T\bibinitperiod},
+           given={Jorg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=03fde2dc3b6629b90470a6f4acdace13}{%
+           family={Tsarfaty},
+           familyi={T\bibinitperiod},
+           given={Reut},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{fullhash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{fullhashraw}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{bibnamehash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{authorbibnamehash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{authornamehash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{authorfullhash}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{authorfullhashraw}{2ebe4dc02e1d9872092b16b577e00044}
+      \strng{editorbibnamehash}{23454d33b14b1e04308ee7197f687529}
+      \strng{editornamehash}{23454d33b14b1e04308ee7197f687529}
+      \strng{editorfullhash}{23454d33b14b1e04308ee7197f687529}
+      \strng{editorfullhashraw}{23454d33b14b1e04308ee7197f687529}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sequential fine-tuning and multi-task learning are methods aiming to incorporate knowledge from multiple tasks; however, they suffer from catastrophic forgetting and difficulties in dataset balancing. To address these shortcomings, we propose AdapterFusion, a new two stage learning algorithm that leverages knowledge from multiple tasks. First, in the knowledge extraction stage we learn task specific parameters called adapters, that encapsulate the task-specific information. We then combine the adapters in a separate knowledge composition step. We show that by separating the two stages, i.e., knowledge extraction and knowledge composition, the classifier can effectively exploit the representations learned from multiple tasks in a non-destructive manner. We empirically evaluate AdapterFusion on 16 diverse NLU tasks, and find that it effectively combines various types of knowledge at different layers of the model. We show that our approach outperforms traditional strategies such as full fine-tuning as well as multi-task learning. Our code and adapters are available at AdapterHub.ml.}
+      \field{booktitle}{Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume}
+      \field{month}{4}
+      \field{title}{{A}dapter{F}usion: Non-Destructive Task Composition for Transfer Learning}
+      \field{year}{2021}
+      \field{pages}{487\bibrangedash 503}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.18653/v1/2021.eacl-main.39
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2021.eacl-main.39/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2021.eacl-main.39/
+      \endverb
+    \endentry
+    \entry{houlsby2019parameterefficienttransferlearningnlp}{misc}{}{}
+      \name{author}{8}{}{%
+        {{hash=493a532418540859dca92cf3b579de2a}{%
+           family={Houlsby},
+           familyi={H\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b8a0189cddf76f0632c7ee97d7c5d08e}{%
+           family={Giurgiu},
+           familyi={G\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df58398336ef18fdca6f86e3a5722698}{%
+           family={Jastrzebski},
+           familyi={J\bibinitperiod},
+           given={Stanislaw},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5de73416a635b7f8401119f70f144cc}{%
+           family={Morrone},
+           familyi={M\bibinitperiod},
+           given={Bruna},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6777337f5500bb326ceebbb5410278fc}{%
+           family={Laroussilhe},
+           familyi={L\bibinitperiod},
+           given={Quentin},
+           giveni={Q\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=e6b7c8e8395a9eeff610fca7ab62fe50}{%
+           family={Gesmundo},
+           familyi={G\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=104d8fc06f8928b6d9db8820656f5573}{%
+           family={Attariyan},
+           familyi={A\bibinitperiod},
+           given={Mona},
+           giveni={M\bibinitperiod}}}%
+        {{hash=450963f966620925cb8fecd32f7a6ee1}{%
+           family={Gelly},
+           familyi={G\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{fullhash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{fullhashraw}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{bibnamehash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{authorbibnamehash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{authornamehash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{authorfullhash}{cc6e2c905968bfad54baa2d784b24330}
+      \strng{authorfullhashraw}{cc6e2c905968bfad54baa2d784b24330}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Parameter-Efficient Transfer Learning for NLP}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1902.00751
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1902.00751
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1902.00751
+      \endverb
+    \endentry
+    \entry{brown2020languagemodelsfewshotlearners}{misc}{}{}
+      \name{author}{31}{}{%
+        {{hash=7c16e8d36475e58d4f2d161e6ecb7704}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Tom\bibnamedelima B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d4543c3bcd6aaf414da4296b349603e5}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9ac58bd43db2434e8e1ffd6182c3fcda}{%
+           family={Ryder},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ed243177743da3e650f1cff6376bb3c}{%
+           family={Subbiah},
+           familyi={S\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9e85370e215d552f72c95a2b63a37802}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4164e43d8cf919f5e3f8d80f5ea23f36}{%
+           family={Dhariwal},
+           familyi={D\bibinitperiod},
+           given={Prafulla},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4ca421ceeb5b516dd8fc64bea5a23f2a}{%
+           family={Neelakantan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ab5d7d7b9cfeaad635c4a60e8950d7dd}{%
+           family={Shyam},
+           familyi={S\bibinitperiod},
+           given={Pranav},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3c1d9a663596faaf544c1a65aac581be}{%
+           family={Sastry},
+           familyi={S\bibinitperiod},
+           given={Girish},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1e84eff933be9f4887bf369cf181bf12}{%
+           family={Askell},
+           familyi={A\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=abe4801e322e893b23785fd6d0800b5c}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Sandhini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=787b9715a98ea66a8d5e6bae042ae0b9}{%
+           family={Herbert-Voss},
+           familyi={H\bibinithyphendelim V\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c3a5cc5e520e0d1a9f8bbf377c74cd27}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Gretchen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=eb1d3044b466619459c76843f0e98bb9}{%
+           family={Henighan},
+           familyi={H\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5c2f5c2e6d4a9ec8681377f8a8e5e6af}{%
+           family={Child},
+           familyi={C\bibinitperiod},
+           given={Rewon},
+           giveni={R\bibinitperiod}}}%
+        {{hash=82063a12702e7b2c026ae0ff03b8f102}{%
+           family={Ramesh},
+           familyi={R\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=18becbb5ea500211a8219e94dd0a975c}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={Daniel\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=495187f3a2c93ddb8083bd18a5702527}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fdaff50f84c08440dcb5fad75b559780}{%
+           family={Winter},
+           familyi={W\bibinitperiod},
+           given={Clemens},
+           giveni={C\bibinitperiod}}}%
+        {{hash=68a04c5006dbbf98f7719709540c6b56}{%
+           family={Hesse},
+           familyi={H\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fb15a691583ec94aafe0be6e7da4878f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a5f009f12a0567430729b5ace41435d}{%
+           family={Sigler},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e5aa3a709cbe706efba113bec9789364}{%
+           family={Litwin},
+           familyi={L\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7006ca8c1ce969019b89de50fece60dd}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=01f70651539bbd7dccc01e86ed9c78c3}{%
+           family={Chess},
+           familyi={C\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1480c861b1a73e1d1de1b227e985b179}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ca86811e7a0582a9e7cb8d33e7ab445d}{%
+           family={Berner},
+           familyi={B\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b51e7c5fe92844f39ce52b8a5fa5675f}{%
+           family={McCandlish},
+           familyi={M\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a812c46caad94fc8701be37871f303ba}{%
+           family={Radford},
+           familyi={R\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1e6adbf36ab730cd5fdadb838b4d2667}{%
+           family={Amodei},
+           familyi={A\bibinitperiod},
+           given={Dario},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{fullhash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{fullhashraw}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{bibnamehash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{authorbibnamehash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{authornamehash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{authorfullhash}{b108601e4cbc36ef53b96ac01974e069}
+      \strng{authorfullhashraw}{b108601e4cbc36ef53b96ac01974e069}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Language Models are Few-Shot Learners}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2005.14165
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2005.14165
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2005.14165
+      \endverb
+    \endentry
+    \entry{minaee2025largelanguagemodelssurvey}{misc}{}{}
+      \name{author}{7}{}{%
+        {{hash=f993317037a8a70ad4d9c6555a09d89a}{%
+           family={Minaee},
+           familyi={M\bibinitperiod},
+           given={Shervin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2d359b12ca2fadf0b40136a73f021bb}{%
+           family={Mikolov},
+           familyi={M\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4d149ba87a2d2a021964e70640ae4577}{%
+           family={Nikzad},
+           familyi={N\bibinitperiod},
+           given={Narjes},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b43c56cc12552e1a9f3d0f2ab2aa5603}{%
+           family={Chenaghlu},
+           familyi={C\bibinitperiod},
+           given={Meysam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d5670b2600fea169724521e252d9d09d}{%
+           family={Socher},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=73d7725e7b8c19a7a179442f898f8a48}{%
+           family={Amatriain},
+           familyi={A\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+        {{hash=159bca5607e3797666654a2e3022978a}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Jianfeng},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{fullhash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{fullhashraw}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{bibnamehash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{authorbibnamehash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{authornamehash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{authorfullhash}{d1123ac7e4314d0953c1b12b854801ba}
+      \strng{authorfullhashraw}{d1123ac7e4314d0953c1b12b854801ba}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Large Language Models: A Survey}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2402.06196
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2402.06196
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2402.06196
+      \endverb
+    \endentry
+    \entry{naveed2024comprehensiveoverviewlargelanguage}{misc}{}{}
+      \name{author}{9}{}{%
+        {{hash=66796972e59bdd4e8082c5a76a167cd3}{%
+           family={Naveed},
+           familyi={N\bibinitperiod},
+           given={Humza},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3e8487979c3d5c449bbcd133489fccd}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Asad\bibnamedelima Ullah},
+           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=224492545ce925352b2ba75589d4918b}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Shi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=02758b43b92b084b3c279e576d5be20e}{%
+           family={Saqib},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=636b14101269d849fb13e7d49a7cec3e}{%
+           family={Anwar},
+           familyi={A\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b188d486913142cb26c6acb66a85531}{%
+           family={Usman},
+           familyi={U\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dae51cf934e0ef7645c0d9bad7d37367}{%
+           family={Akhtar},
+           familyi={A\bibinitperiod},
+           given={Naveed},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2f11f27ecdb1aa875cfab05fcff91ac9}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e66ddb661075e1ec2d86e6cc0fa46aef}{%
+           family={Mian},
+           familyi={M\bibinitperiod},
+           given={Ajmal},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{fullhash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{fullhashraw}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{bibnamehash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{authorbibnamehash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{authornamehash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{authorfullhash}{284731eecb06d3d5e9bc985b5f5c8214}
+      \strng{authorfullhashraw}{284731eecb06d3d5e9bc985b5f5c8214}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Comprehensive Overview of Large Language Models}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2307.06435
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2307.06435
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2307.06435
+      \endverb
+    \endentry
+    \entry{modernbertreplacment}{online}{}{}
+      \name{author}{15}{}{%
+        {{hash=e0cc69084d6c37310e7853e32d88e19d}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=601fe57ad1ac74988e9b317635c576f2}{%
+           family={Chaffin},
+           familyi={C\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9817ecfe603ddeba925c0ec49d5eb417}{%
+           family={Clavié},
+           familyi={C\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a390033bb496c7e945d44bfae3e5cb96}{%
+           family={Weller},
+           familyi={W\bibinitperiod},
+           given={Orion},
+           giveni={O\bibinitperiod}}}%
+        {{hash=4cb9fdd9a07c975baf1e6ef7393e932f}{%
+           family={Hallström},
+           familyi={H\bibinitperiod},
+           given={Oskar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=ac4c7f3a590f85084a8f3a4d425fdc52}{%
+           family={Taghadouini},
+           familyi={T\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=95bf655d4ea3f33773854dc6761c7e3b}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3d5dd250419b91493fe8bb047b2d6507}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Raja},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ced0403c07861802e74bf36cea3d1460}{%
+           family={Ladhak},
+           familyi={L\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fa841ccb24e93d64ad7a77ae3a74dc3c}{%
+           family={Aarsen},
+           familyi={A\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e1340892f2f9159b54754ec358ebffc2}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8622a409ab2c55a8625fbda03488c11e}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Griffin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5ed422e177c5444b96679479aeed0c51}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=064ef887c35ddd491ce12b822d34e137}{%
+           family={Whitaker},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f15655028757251dbf9447cde6ad33c}{%
+           family={Poli},
+           familyi={P\bibinitperiod},
+           given={Iacopo},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{fullhash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{fullhashraw}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{bibnamehash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{authorbibnamehash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{authornamehash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{authorfullhash}{7c048c3085294cfd5485cddfac8f921e}
+      \strng{authorfullhashraw}{7c048c3085294cfd5485cddfac8f921e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finally, a Replacement for BERT}
+      \field{urlday}{4}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://huggingface.co/blog/modernbert
+      \endverb
+      \verb{url}
+      \verb https://huggingface.co/blog/modernbert
+      \endverb
+    \endentry
+    \entry{liu2019robertarobustlyoptimizedbert}{misc}{}{}
+      \name{author}{10}{}{%
+        {{hash=94530daf7a9db4abe89cfb22935373eb}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yinhan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b13aa2bad5258fa5ef7a733f2d305a49}{%
+           family={Ott},
+           familyi={O\bibinitperiod},
+           given={Myle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=78a420900f50a8470ad085fb05231bf6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Naman},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e483b52ce2cd3ba2fd08e7bf4fef4ff0}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Jingfei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e5bfa941bcdbfecb5f3e42bb6ac9eb5f}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Mandar},
+           giveni={M\bibinitperiod}}}%
+        {{hash=aed188db3fc6855ac5666aa14e04a3bb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Danqi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=038965e189161e03f6255a4278c280a1}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Omer},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c97f53fdeeb04c28de19e3324cb4bc0a}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1dbd3a5b42828fb2cebd7786488ba425}{%
+           family={Zettlemoyer},
+           familyi={Z\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9b97236dd2d1a104fc5cf9660dd5582e}{%
+           family={Stoyanov},
+           familyi={S\bibinitperiod},
+           given={Veselin},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{fullhash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{fullhashraw}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{bibnamehash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{authorbibnamehash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{authornamehash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{authorfullhash}{7579c765ce38b2c34c8f9768ec3bc342}
+      \strng{authorfullhashraw}{7579c765ce38b2c34c8f9768ec3bc342}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{RoBERTa: A Robustly Optimized BERT Pretraining Approach}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1907.11692
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1907.11692
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1907.11692
+      \endverb
+    \endentry
+    \entry{warner2024smarterbetterfasterlonger}{misc}{}{}
+      \name{author}{14}{}{%
+        {{hash=e0cc69084d6c37310e7853e32d88e19d}{%
+           family={Warner},
+           familyi={W\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=601fe57ad1ac74988e9b317635c576f2}{%
+           family={Chaffin},
+           familyi={C\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9817ecfe603ddeba925c0ec49d5eb417}{%
+           family={Clavié},
+           familyi={C\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a390033bb496c7e945d44bfae3e5cb96}{%
+           family={Weller},
+           familyi={W\bibinitperiod},
+           given={Orion},
+           giveni={O\bibinitperiod}}}%
+        {{hash=4cb9fdd9a07c975baf1e6ef7393e932f}{%
+           family={Hallström},
+           familyi={H\bibinitperiod},
+           given={Oskar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=ac4c7f3a590f85084a8f3a4d425fdc52}{%
+           family={Taghadouini},
+           familyi={T\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=95bf655d4ea3f33773854dc6761c7e3b}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3d5dd250419b91493fe8bb047b2d6507}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Raja},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ced0403c07861802e74bf36cea3d1460}{%
+           family={Ladhak},
+           familyi={L\bibinitperiod},
+           given={Faisal},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fa841ccb24e93d64ad7a77ae3a74dc3c}{%
+           family={Aarsen},
+           familyi={A\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e1340892f2f9159b54754ec358ebffc2}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8622a409ab2c55a8625fbda03488c11e}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Griffin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5ed422e177c5444b96679479aeed0c51}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f15655028757251dbf9447cde6ad33c}{%
+           family={Poli},
+           familyi={P\bibinitperiod},
+           given={Iacopo},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{fullhash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{fullhashraw}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{bibnamehash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{authorbibnamehash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{authornamehash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{authorfullhash}{8b2b539c0e9f8315f0a55766f318e050}
+      \strng{authorfullhashraw}{8b2b539c0e9f8315f0a55766f318e050}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2412.13663
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2412.13663
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2412.13663
+      \endverb
+    \endentry
+    \entry{NasukawaSA}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=b066cbbffb1f3e37e6f6c4fb0d7fd16b}{%
+           family={Nasukawa},
+           familyi={N\bibinitperiod},
+           given={Tetsuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=734af19c62797f10683bc9256aafeaff}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Jeonghee},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sanibel Island, FL, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{fullhash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{fullhashraw}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{bibnamehash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{authorbibnamehash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{authornamehash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{authorfullhash}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \strng{authorfullhashraw}{5b64fe69c7cc8ac7b09cfdc3141d4bc1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper illustrates a sentiment analysis approach to extract sentiments associated with polarities of positive or negative for specific subjects from a document, instead of classifying the whole document into positive or negative.The essential issues in sentiment analysis are to identify how sentiments are expressed in texts and whether the expressions indicate positive (favorable) or negative (unfavorable) opinions toward the subject. In order to improve the accuracy of the sentiment analysis, it is important to properly identify the semantic relationships between the sentiment expressions and the subject. By applying semantic analysis with a syntactic parser and sentiment lexicon, our prototype system achieved high precision (75-95\%, depending on the data) in finding sentiments within Web pages and news articles.}
+      \field{booktitle}{Proceedings of the 2nd International Conference on Knowledge Capture}
+      \field{isbn}{1581135831}
+      \field{series}{K-CAP '03}
+      \field{title}{Sentiment analysis: capturing favorability using natural language processing}
+      \field{year}{2003}
+      \field{pages}{70\bibrangedash 77}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/945645.945658
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/945645.945658
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/945645.945658
+      \endverb
+      \keyw{favorability analysis,information extraction,sentiment analysis,text mining}
+    \endentry
+    \entry{Aqlanstudyofsentiment}{inbook}{}{}
+      \name{author}{3}{}{%
+        {{hash=665aa1fbc8825b81ed80473a565a1e9d}{%
+           family={Aqlan},
+           familyi={A\bibinitperiod},
+           given={Ameen},
+           giveni={A\bibinitperiod}}}%
+        {{hash=03184df6cbdbcd4eae7ffb411acf3b40}{%
+           family={Bairam},
+           familyi={B\bibinitperiod},
+           given={Dr.\bibnamedelimi Manjula},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f41e20b3072d7f8abf9d0da0a1719db6}{%
+           family={Naik},
+           familyi={N\bibinitperiod},
+           given={R\bibnamedelima Lakshman},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{fullhash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{fullhashraw}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{bibnamehash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{authorbibnamehash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{authornamehash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{authorfullhash}{d74a7d1d5629b194ceb9b1c32966480b}
+      \strng{authorfullhashraw}{d74a7d1d5629b194ceb9b1c32966480b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4939-9044-3}
+      \field{month}{01}
+      \field{title}{A Study of Sentiment Analysis: Concepts, Techniques, and Challenges}
+      \field{year}{2019}
+      \field{pages}{147\bibrangedash 162}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/978-981-13-6459-4_16
+      \endverb
+    \endentry
+    \entry{hanameme}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=76ce2c0f6c9ea6044153c3161f85d99a}{%
+           family={Loudová},
+           familyi={L\bibinitperiod},
+           given={Hana},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{fullhash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{fullhashraw}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{bibnamehash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{authorbibnamehash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{authornamehash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{authorfullhash}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \strng{authorfullhashraw}{76ce2c0f6c9ea6044153c3161f85d99a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Už jste slyšeli about czenglish memes?}
+      \field{urlday}{6}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ucjtk.ff.cuni.cz/wp-content/uploads/sites/57/2015/12/Hana-Loudoví_Uż-jste-slyíeli-about-czenglish-memes.pdf
+      \endverb
+      \verb{url}
+      \verb https://ucjtk.ff.cuni.cz/wp-content/uploads/sites/57/2015/12/Hana-Loudov%C3%AD_U%C5%BC-jste-sly%C3%ADeli-about-czenglish-memes.pdf
+      \endverb
+    \endentry
+    \entry{kumar2023comprehensivereviewsentimentanalysis}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=335288500518d66ec091a9ad14920b6c}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sudhanshu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=50b08b39eb33aeea18b7ca1d5528c508}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Partha\bibnamedelima Pratim},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=16e1434adbb32d04bc2b19e19358c674}{%
+           family={Dogra},
+           familyi={D\bibinitperiod},
+           given={Debi\bibnamedelima Prosad},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8766c6faba5ae46a1582f2bf5fb5ec7c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Byung-Gyu},
+           giveni={B\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{fullhash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{fullhashraw}{facd07d797e971589d392a7a23fee4e7}
+      \strng{bibnamehash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{authorbibnamehash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{authornamehash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{authorfullhash}{facd07d797e971589d392a7a23fee4e7}
+      \strng{authorfullhashraw}{facd07d797e971589d392a7a23fee4e7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Comprehensive Review on Sentiment Analysis: Tasks, Approaches and Applications}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2311.11250
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2311.11250
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2311.11250
+      \endverb
+    \endentry
+    \entry{MAO2024102048}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5f2a6feb0d3eb7ca9e8ce5947bdb5f96}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Yanying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e51b2feac8da559d0f1d95788a6eaea4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qun},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=9a4f4a1ff661cd600eb26523a5ba8bb4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{fullhash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{fullhashraw}{5cf79849c2e63c78155a51293c580a49}
+      \strng{bibnamehash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{authorbibnamehash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{authornamehash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{authorfullhash}{5cf79849c2e63c78155a51293c580a49}
+      \strng{authorfullhashraw}{5cf79849c2e63c78155a51293c580a49}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the expansion of Internet-based applications, the number of comments shows explosive growth. Analyzing the attitudes and emotions behind comments provides powerful assistance for businesses, governments, and scholars. However, it is hard to effectively extract user’s attitude from the massive amounts of comments. Sentiment analysis (SA) provides an automatic, fast and efficient tool to identify reviewers’ opinions and sentiments. However, the existing literature reviews cover a limited number of studies or have a narrow field of studies for sentiment analysis. This paper provided a systematic literature review of sentiment analysis methods, applications, and challenges. This systematic literature review gives insights into the goal of the sentiment analysis task, offers comparisons of different techniques, investigates the application domains of sentiment analysis, highlights the challenges and limitations encountered by scholars, provides suggestions on possible solutions and explores the future research directions. The study’s findings emphasize the significant role of artificial intelligence technologies in automatic text sentiment analysis and highlight the importance of sentiment analysis in people’s production and life. This research not only contributes to the existing sentiment analysis knowledge body but also provides references to scholars and practitioners in choosing a suitable methodology and good practices to perform sentiment analysis.}
+      \field{issn}{1319-1578}
+      \field{journaltitle}{Journal of King Saud University - Computer and Information Sciences}
+      \field{number}{4}
+      \field{title}{Sentiment analysis methods, applications, and challenges: A systematic literature review}
+      \field{volume}{36}
+      \field{year}{2024}
+      \field{pages}{102048}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jksuci.2024.102048
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S131915782400137X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S131915782400137X
+      \endverb
+      \keyw{Sentiment analysis,Methods,Applications,Large language models,Challenges}
+    \endentry
+    \entry{SuryawanshiSA}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=319ec1dcbd67da541e2d8d9d4aa107d3}{%
+           family={Suryawanshi},
+           familyi={S\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{fullhash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{fullhashraw}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{bibnamehash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{authorbibnamehash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{authornamehash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{authorfullhash}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \strng{authorfullhashraw}{319ec1dcbd67da541e2d8d9d4aa107d3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Science and Research Archive}
+      \field{month}{06}
+      \field{title}{Sentiment analysis with machine learning and deep learning: A survey of techniques and applications}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{005\bibrangedash 015}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.30574/ijsra.2024.12.2.1205
+      \endverb
+    \endentry
+    \entry{zhang2018deeplearningsentimentanalysis}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=f4a4cbf770add19c206827116c68732e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d40715daabe18f3238281befdb32fb12}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9c6fb2af2964f3126cfd4e505a38daca}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{fullhash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{fullhashraw}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{bibnamehash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{authorbibnamehash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{authornamehash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{authorfullhash}{683ae8fc3f8eaf80b1690e87411964fb}
+      \strng{authorfullhashraw}{683ae8fc3f8eaf80b1690e87411964fb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Deep Learning for Sentiment Analysis : A Survey}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1801.07883
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1801.07883
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1801.07883
+      \endverb
+    \endentry
+    \entry{RNNbib}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d5a20a1ebd7891ecfcfd79254de20395}{%
+           family={Elman},
+           familyi={E\bibinitperiod},
+           given={Jeffrey\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{fullhash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{fullhashraw}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{bibnamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authorbibnamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authornamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authorfullhash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authorfullhashraw}{d5a20a1ebd7891ecfcfd79254de20395}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important. One approach is to represent time implicitly by its effects on processing rather than explicitly (as in a spatial representation). The current report develops a proposal along these lines first described by Jordan (1986) which involves the use of recurrent links in order to provide networks with a dynamic memory. In this approach, hidden unit patterns are fed back to themselves: the internal representations which develop thus reflect task demands in the context of prior internal states. A set of simulations is reported which range from relatively simple problems (temporal version of XOR) to discovering syntactic/semantic features for words. The networks are able to learn interesting internal representations which incorporate task demands with memory demands: indeed, in this approach the notion of memory is inextricably bound up with task processing. These representations reveal a rich structure, which allows them to be highly context-dependent, while also expressing generalizations across classes of items. These representations suggest a method for representing lexical categories and the type/token distinction.}
+      \field{journaltitle}{Cognitive Science}
+      \field{number}{2}
+      \field{title}{Finding Structure in Time}
+      \field{volume}{14}
+      \field{year}{1990}
+      \field{pages}{179\bibrangedash 211}
+      \range{pages}{33}
+      \verb{doi}
+      \verb https://doi.org/10.1207/s15516709cog1402\_1
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1402_1
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1
+      \endverb
+    \endentry
+    \entry{LSTMbib}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhashraw}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{bibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhashraw}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.}
+      \field{issn}{0899-7667}
+      \field{journaltitle}{Neural Computation}
+      \field{month}{11}
+      \field{number}{8}
+      \field{title}{Long Short-Term Memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+      \verb{doi}
+      \verb 10.1162/neco.1997.9.8.1735
+      \endverb
+      \verb{eprint}
+      \verb https://direct.mit.edu/neco/article-pdf/9/8/1735/813796/neco.1997.9.8.1735.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/neco.1997.9.8.1735
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/neco.1997.9.8.1735
+      \endverb
+    \endentry
+    \entry{bahdanau2016neuralmachinetranslationjointly}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=6d80adec79a13a33e73215c5f46f1605}{%
+           family={Bahdanau},
+           familyi={B\bibinitperiod},
+           given={Dzmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{fullhash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{fullhashraw}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{bibnamehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authorbibnamehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authornamehash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authorfullhash}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \strng{authorfullhashraw}{ccf5ebef61998aaab5ec6eace8f4564d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neural Machine Translation by Jointly Learning to Align and Translate}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1409.0473
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1409.0473
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1409.0473
+      \endverb
+    \endentry
+    \entry{weston2015memorynetworks}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=417a25f3511d7c21e76d4a15e67dd679}{%
+           family={Weston},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83e9081b3be58a20d597b22b70648e30}{%
+           family={Chopra},
+           familyi={C\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f1733e10bf044cbd7be63e10e5689d78}{%
+           family={Bordes},
+           familyi={B\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{fullhash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{fullhashraw}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{bibnamehash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{authorbibnamehash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{authornamehash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{authorfullhash}{16241d235ff39923179fc96c9fe2e8ee}
+      \strng{authorfullhashraw}{16241d235ff39923179fc96c9fe2e8ee}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Memory Networks}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1410.3916
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1410.3916
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1410.3916
+      \endverb
+    \endentry
+    \entry{sukhbaatar2015endtoendmemorynetworks}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=72c54cfe76db45d84a3413df9e903ff4}{%
+           family={Sukhbaatar},
+           familyi={S\bibinitperiod},
+           given={Sainbayar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b31b3f03b1e1ee0eec6ff58f9a9df960}{%
+           family={Szlam},
+           familyi={S\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=417a25f3511d7c21e76d4a15e67dd679}{%
+           family={Weston},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a6784304d1cc890b2cb6c6c7f2f3fd76}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{fullhash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{fullhashraw}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{bibnamehash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{authorbibnamehash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{authornamehash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{authorfullhash}{c1747fc37d20f3babae706cfe6829ee1}
+      \strng{authorfullhashraw}{c1747fc37d20f3babae706cfe6829ee1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{End-To-End Memory Networks}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1503.08895
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1503.08895
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1503.08895
+      \endverb
+    \endentry
+    \entry{TAN2020336}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a9a110ec8fbd897322a3bd6ad1d467e1}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Xingwei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8dfb7920aa501b8d35641e6243ead6cb}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e390b820e2aa422d4ea443944f7d6cb9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jingyun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0cebef5ff3d753b4acb21b29012df915}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Ho-Fung},
+           giveni={H\bibinithyphendelim F\bibinitperiod}}}%
+        {{hash=cdf2a3b0071e7d4a3be0f8a447d822d8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wenhao},
+           giveni={W\bibinitperiod}}}%
+        {{hash=16a77262afb7cc9b0229c21f168bd098}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{730e2ee6af7675049541f24638798fb9}
+      \strng{fullhash}{730e2ee6af7675049541f24638798fb9}
+      \strng{fullhashraw}{730e2ee6af7675049541f24638798fb9}
+      \strng{bibnamehash}{730e2ee6af7675049541f24638798fb9}
+      \strng{authorbibnamehash}{730e2ee6af7675049541f24638798fb9}
+      \strng{authornamehash}{730e2ee6af7675049541f24638798fb9}
+      \strng{authorfullhash}{730e2ee6af7675049541f24638798fb9}
+      \strng{authorfullhashraw}{730e2ee6af7675049541f24638798fb9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aspect-Based Sentiment Analysis (ABSA) is a fine-grained sentiment analysis task, which aims to predict sentiment polarities of given aspects or target terms in text. ABSA contains two subtasks: Aspect-Category Sentiment Analysis (ACSA) and Aspect-Term Sentiment Analysis (ATSA). Aspect embeddings have been extensively used for representing aspect-categories on ACSA task. Based on our observations, existing aspect embeddings cannot properly represent the relation between aspect-categories and aspect-terms. To address this limitation, this paper presents a learning method which trains aspect embeddings according to the relation between aspect-categories and aspect-terms. According to the cosine measure metric we proposed in this paper, the limitation is successfully alleviated in the aspect embeddings which are trained by our method. The trained aspect embeddings can be used as initialization in existing models to solve ACSA task. We conduct experiments on SemEval datasets for ACSA task, and the results indicate that our pre-trained aspect embeddings are capable of improving the performance of sentiment analysis.}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Improving aspect-based sentiment analysis via aligning aspect embedding}
+      \field{volume}{383}
+      \field{year}{2020}
+      \field{pages}{336\bibrangedash 347}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neucom.2019.12.035
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231219317382
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0925231219317382
+      \endverb
+      \keyw{Aspect embedding,Sentiment analysis,Representation learning}
+    \endentry
+    \entry{XU2020135}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=15e09b72994dd79c94e57fd9cc2ba6b1}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Qiannan},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=b91cb5d0661220eb12d7c6c739583449}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=304fe7269639d5cb5f8258f3f196db7d}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=91dfb52f2b24fb0f0e070f7c52421aae}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Chengbing},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{574888f6241b89380e5568b2e933c10d}
+      \strng{fullhash}{574888f6241b89380e5568b2e933c10d}
+      \strng{fullhashraw}{574888f6241b89380e5568b2e933c10d}
+      \strng{bibnamehash}{574888f6241b89380e5568b2e933c10d}
+      \strng{authorbibnamehash}{574888f6241b89380e5568b2e933c10d}
+      \strng{authornamehash}{574888f6241b89380e5568b2e933c10d}
+      \strng{authorfullhash}{574888f6241b89380e5568b2e933c10d}
+      \strng{authorfullhashraw}{574888f6241b89380e5568b2e933c10d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aspect-based sentiment classification aims to predict the sentiment polarity of an aspect term in a sentence instead of the sentiment polarity of the entire sentence. Neural networks have been used for this task, and most existing methods have adopted sequence models, which require more training time than other models. When an aspect term comprises several words, most methods involve a coarse-level attention mechanism to model the aspect, and this may result in information loss. In this paper, we propose a multi-attention network (MAN) to address the above problems. The proposed model uses intra- and inter-level attention mechanisms. In the former, the MAN employs a transformer encoder instead of a sequence model to reduce training time. The transformer encoder encodes the input sentence in parallel and preserves long-distance sentiment relations. In the latter, the MAN uses a global and a local attention module to capture differently grained interactive information between aspect and context. The global attention module focuses on the entire relation, whereas the local attention module considers interactions at word level; this was often neglected in previous studies. Experiments demonstrate that the proposed model achieves superior results when compared to the baseline models.}
+      \field{issn}{0925-2312}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Aspect-based sentiment classification with multi-attention network}
+      \field{volume}{388}
+      \field{year}{2020}
+      \field{pages}{135\bibrangedash 143}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neucom.2020.01.024
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S092523122030059X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S092523122030059X
+      \endverb
+      \keyw{Aspect-based sentiment classification,Sentiment analysis,Attention mechanism,Neural network}
+    \endentry
+    \entry{chebolu-etal-2024-oats}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=b6e301291c06f67b85ad03bb7dfecffa}{%
+           family={Chebolu},
+           familyi={C\bibinitperiod},
+           given={Siva\bibnamedelimb Uday\bibnamedelima Sampreeth},
+           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=3fc6c673c89e1621c308fa6ab00d0f06}{%
+           family={Dernoncourt},
+           familyi={D\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cfd941a3e4305aa2c4efd3698010ae7f}{%
+           family={Lipka},
+           familyi={L\bibinitperiod},
+           given={Nedim},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b47889ad94571547c92970150485798b}{%
+           family={Solorio},
+           familyi={S\bibinitperiod},
+           given={Thamar},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=549f49a0f40722c52169e0083730d12f}{%
+           family={Kan},
+           familyi={K\bibinitperiod},
+           given={Min-Yen},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=a2552991b1433efe99cce9b2a665aae7}{%
+           family={Hoste},
+           familyi={H\bibinitperiod},
+           given={Veronique},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5ca65e378c2b71d06107979d273315ed}{%
+           family={Lenci},
+           familyi={L\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8f51dd1b39e7ef8aa830c97a98536583}{%
+           family={Sakti},
+           familyi={S\bibinitperiod},
+           given={Sakriani},
+           giveni={S\bibinitperiod}}}%
+        {{hash=47c3156f10dfabf6842e8caf450fda15}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Nianwen},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Torino, Italia}%
+      }
+      \list{publisher}{2}{%
+        {ELRA}%
+        {ICCL}%
+      }
+      \strng{namehash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{fullhash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{fullhashraw}{731a5f0607e260f1c3004285578c7f86}
+      \strng{bibnamehash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{authorbibnamehash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{authornamehash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{authorfullhash}{731a5f0607e260f1c3004285578c7f86}
+      \strng{authorfullhashraw}{731a5f0607e260f1c3004285578c7f86}
+      \strng{editorbibnamehash}{67cc341797d15e0b10b5e05c259573e8}
+      \strng{editornamehash}{67cc341797d15e0b10b5e05c259573e8}
+      \strng{editorfullhash}{67cc341797d15e0b10b5e05c259573e8}
+      \strng{editorfullhashraw}{67cc341797d15e0b10b5e05c259573e8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aspect-based sentiment analysis (ABSA) delves into understanding sentiments specific to distinct elements within a user-generated review. It aims to analyze user-generated reviews to determine a) the target entity being reviewed, b) the high-level aspect to which it belongs, c) the sentiment words used to express the opinion, and d) the sentiment expressed toward the targets and the aspects. While various benchmark datasets have fostered advancements in ABSA, they often come with domain limitations and data granularity challenges. Addressing these, we introduce the OATS dataset, which encompasses three fresh domains and consists of 27,470 sentence-level quadruples and 17,092 review-level tuples. Our initiative seeks to bridge specific observed gaps in existing datasets: the recurrent focus on familiar domains like restaurants and laptops, limited data for intricate quadruple extraction tasks, and an occasional oversight of the synergy between sentence and review-level sentiments. Moreover, to elucidate OATS`s potential and shed light on various ABSA subtasks that OATS can solve, we conducted experiments, establishing initial baselines. We hope the OATS dataset augments current resources, paving the way for an encompassing exploration of ABSA (https://github.com/RiTUAL-UH/OATS-ABSA).}
+      \field{booktitle}{Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)}
+      \field{month}{5}
+      \field{title}{{OATS}: A Challenge Dataset for Opinion Aspect Target Sentiment Joint Detection for Aspect-Based Sentiment Analysis}
+      \field{year}{2024}
+      \field{pages}{12336\bibrangedash 12347}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2024.lrec-main.1080/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2024.lrec-main.1080/
+      \endverb
+    \endentry
+    \entry{zhang-etal-2021-towards-generative}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=c4c338db452298ba7661a0bcdbc26ae8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wenxuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=63c044fc1bc04fba0954b8e26fcca4ce}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1fe22ed203b25c67e853adfbc3c880f8}{%
+           family={Bing},
+           familyi={B\bibinitperiod},
+           given={Lidong},
+           giveni={L\bibinitperiod}}}%
+        {{hash=56789f2d40a059bed1d3d0c663022c3e}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Wai},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=9d8c366afd7f948820f05d7fe6206c28}{%
+           family={Zong},
+           familyi={Z\bibinitperiod},
+           given={Chengqing},
+           giveni={C\bibinitperiod}}}%
+        {{hash=61e00ed0c44b8bddb9077a74a4ac1167}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=318a797cfb1e6f8da35b79287d226780}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenjie},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6fe24dce481a67e247581d4b20435709}{%
+           family={Navigli},
+           familyi={N\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{fullhash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{fullhashraw}{a887978fc75b7de86fd0e6a698def834}
+      \strng{bibnamehash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{authorbibnamehash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{authornamehash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{authorfullhash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{authorfullhashraw}{a887978fc75b7de86fd0e6a698def834}
+      \strng{editorbibnamehash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editornamehash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editorfullhash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editorfullhashraw}{7c3dda83a9d34ca480a8d30a423f8916}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Aspect-based sentiment analysis (ABSA) has received increasing attention recently. Most existing work tackles ABSA in a discriminative manner, designing various task-specific classification networks for the prediction. Despite their effectiveness, these methods ignore the rich label semantics in ABSA problems and require extensive task-specific designs. In this paper, we propose to tackle various ABSA tasks in a unified generative framework. Two types of paradigms, namely annotation-style and extraction-style modeling, are designed to enable the training process by formulating each ABSA task as a text generation problem. We conduct experiments on four ABSA tasks across multiple benchmark datasets where our proposed generative approach achieves new state-of-the-art results in almost all cases. This also validates the strong generality of the proposed framework which can be easily adapted to arbitrary ABSA task without additional task-specific model design.}
+      \field{booktitle}{Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)}
+      \field{month}{8}
+      \field{title}{Towards Generative Aspect-Based Sentiment Analysis}
+      \field{year}{2021}
+      \field{pages}{504\bibrangedash 510}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.18653/v1/2021.acl-short.64
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2021.acl-short.64/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2021.acl-short.64/
+      \endverb
+    \endentry
+    \entry{li2020multiinstancemultilabellearningnetworks}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=6dbc91af7e98271d90cd371872cdc8f2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuncong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e4755afd3ee2e6dfd6c99bbb22aa366b}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Cunxiang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d19de4e73be35d897600c8825ca5ae9b}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Sheng-hua},
+           giveni={S\bibinithyphendelim h\bibinitperiod}}}%
+        {{hash=d98318030876573c4cdc96958fa21914}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{fullhash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{fullhashraw}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{bibnamehash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{authorbibnamehash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{authornamehash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{authorfullhash}{2061c1a4f7a97f581a58b49c143f5e42}
+      \strng{authorfullhashraw}{2061c1a4f7a97f581a58b49c143f5e42}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Multi-Instance Multi-Label Learning Networks for Aspect-Category Sentiment Analysis}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2010.02656
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2010.02656
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2010.02656
+      \endverb
+    \endentry
+    \entry{Peng_Xu_Bing_Huang_Lu_Si_2020}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=9d8436c74b43421234843599c6f10e3b}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Haiyun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f4e7211062dc28599145c1d24b3bcede}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1fe22ed203b25c67e853adfbc3c880f8}{%
+           family={Bing},
+           familyi={B\bibinitperiod},
+           given={Lidong},
+           giveni={L\bibinitperiod}}}%
+        {{hash=10a0d3aa004649de7a7ab2ffecb35bce}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cb550a145b27c55a56001120c672da49}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b7c083cd88ad385d770eef8158c4104d}{%
+           family={Si},
+           familyi={S\bibinitperiod},
+           given={Luo},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{fullhash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{fullhashraw}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{bibnamehash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{authorbibnamehash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{authornamehash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{authorfullhash}{d2221ac7f416e12a41dd6ae2251130f2}
+      \strng{authorfullhashraw}{d2221ac7f416e12a41dd6ae2251130f2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
+      \field{month}{4}
+      \field{number}{05}
+      \field{title}{Knowing What, How and Why: A Near Complete Solution for Aspect-Based Sentiment Analysis}
+      \field{volume}{34}
+      \field{year}{2020}
+      \field{pages}{8600\bibrangedash 8607}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1609/aaai.v34i05.6383
+      \endverb
+      \verb{urlraw}
+      \verb https://ojs.aaai.org/index.php/AAAI/article/view/6383
+      \endverb
+      \verb{url}
+      \verb https://ojs.aaai.org/index.php/AAAI/article/view/6383
+      \endverb
+    \endentry
+    \entry{Wan_Yang_Du_Liu_Qi_Pan_2020}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=e51ac9f559a5a0f1a2c440cb400f58b4}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={Hai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2fbd2e42e72fc01091cf2c44b2201392}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yufei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bfe3ff907b79a01bc2a0029bf6e07848}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Jianfeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f41c2d44c8c12f672af92a8d0d5f7bc4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yanan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6ff807a3035e780f8531341a247ba800}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Kunxun},
+           giveni={K\bibinitperiod}}}%
+        {{hash=278c599f0a2e44df256b1d60ef313ea9}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jeff\bibnamedelima Z.},
+           giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{fullhash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{fullhashraw}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{bibnamehash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{authorbibnamehash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{authornamehash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{authorfullhash}{3060a212e9d3ce32af77d032f8e93233}
+      \strng{authorfullhashraw}{3060a212e9d3ce32af77d032f8e93233}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
+      \field{month}{4}
+      \field{number}{05}
+      \field{title}{Target-Aspect-Sentiment Joint Detection for Aspect-Based Sentiment Analysis}
+      \field{volume}{34}
+      \field{year}{2020}
+      \field{pages}{9122\bibrangedash 9129}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1609/aaai.v34i05.6447
+      \endverb
+      \verb{urlraw}
+      \verb https://ojs.aaai.org/index.php/AAAI/article/view/6447
+      \endverb
+      \verb{url}
+      \verb https://ojs.aaai.org/index.php/AAAI/article/view/6447
+      \endverb
+    \endentry
+    \entry{Ke2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=f2a599c414f7c85d73339e6c0124ff53}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Cai},
+           giveni={C\bibinitperiod}}}%
+        {{hash=94caff9d51285f985f970617ef1d871f}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Qingyu},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=ee067c6f3bec8b7a005d92f1ea46fbcb}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=094690d886f5ffceee8c5289610f0eb0}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Hualing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fe96994b6b577cf98185a06d9ba0afc3}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f12458352bf48d8ebe2ba46b11310c19}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{fullhash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{fullhashraw}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{bibnamehash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{authorbibnamehash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{authornamehash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{authorfullhash}{b4b16767c6a26a53894a2b74cf290ad2}
+      \strng{authorfullhashraw}{b4b16767c6a26a53894a2b74cf290ad2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Target-aspect-sentiment detection (TASD) task is a vital task for aspect-based sentiment analysis, which aims to detect (target, aspect, sentiment) triples from sentences. However, most of the existing methods do not generate high-quality textual representations and thus produce poor performances on the TASD task. Moreover, how to deal with insufficient high-quality labeled data is also a great challenge. In this paper, we design DPDA, a Dual Prompts-based Data Augmentation method, that can generate diverse sentences with a question prompt view and an answer prompt view for each input. Then, we propose SimCPD, a Simple Framework for Contrastive Prompts of Target-Aspect-Sentiment Joint Detection, that maximizes the agreement between the two prompt views to obtain high-quality textual representations. Experiments on SemEval-2015 and SemEval-2016 demonstrate that the proposed DPDA can generate high-quality semantic information and alleviate the problem of sparsely labeled data. Moreover, the proposed SimCPD can detect (target, aspect, sentiment) triples more efficiently than other methods. Furthermore, it also achieves better performance on five TASD subtasks.}
+      \field{issn}{1433-3058}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{month}{8}
+      \field{number}{22}
+      \field{title}{SimCPD: a simple framework for contrastive prompts of target-aspect-sentiment joint detection}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{16577\bibrangedash 16592}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s00521-023-08529-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00521-023-08529-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00521-023-08529-6
+      \endverb
+    \endentry
+    \entry{cai-etal-2021-aspect}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=cd516acbc5b09f4fa640bd1392491fb5}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=81d13b72793e9de4d52426ac2166a308}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=92a583a38a97c1729c7f8106098ee316}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jianfei},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=9d8c366afd7f948820f05d7fe6206c28}{%
+           family={Zong},
+           familyi={Z\bibinitperiod},
+           given={Chengqing},
+           giveni={C\bibinitperiod}}}%
+        {{hash=61e00ed0c44b8bddb9077a74a4ac1167}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=318a797cfb1e6f8da35b79287d226780}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wenjie},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6fe24dce481a67e247581d4b20435709}{%
+           family={Navigli},
+           familyi={N\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{fullhash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{fullhashraw}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{bibnamehash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{authorbibnamehash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{authornamehash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{authorfullhash}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{authorfullhashraw}{ea3ca83f8257f1878d9782f0989e730f}
+      \strng{editorbibnamehash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editornamehash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editorfullhash}{7c3dda83a9d34ca480a8d30a423f8916}
+      \strng{editorfullhashraw}{7c3dda83a9d34ca480a8d30a423f8916}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Product reviews contain a large number of implicit aspects and implicit opinions. However, most of the existing studies in aspect-based sentiment analysis ignored this problem. In this work, we introduce a new task, named Aspect-Category-Opinion-Sentiment (ACOS) Quadruple Extraction, with the goal to extract all aspect-category-opinion-sentiment quadruples in a review sentence and provide full support for aspect-based sentiment analysis with implicit aspects and opinions. We furthermore construct two new datasets, Restaurant-ACOS and Laptop-ACOS, for this new task, both of which contain the annotations of not only aspect-category-opinion-sentiment quadruples but also implicit aspects and opinions. The former is an extension of the SemEval Restaurant dataset; the latter is a newly collected and annotated Laptop dataset, twice the size of the SemEval Laptop dataset. We finally benchmark the task with four baseline systems. Experiments demonstrate the feasibility of the new task and its effectiveness in extracting and describing implicit aspects and implicit opinions. The two datasets and source code of four systems are publicly released at \url{https://github.com/NUSTM/ACOS}.}
+      \field{booktitle}{Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)}
+      \field{month}{8}
+      \field{title}{Aspect-Category-Opinion-Sentiment Quadruple Extraction with Implicit Aspects and Opinions}
+      \field{year}{2021}
+      \field{pages}{340\bibrangedash 350}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.18653/v1/2021.acl-long.29
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2021.acl-long.29/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2021.acl-long.29/
+      \endverb
+    \endentry
+    \entry{Sreesurya2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=8b9ec732b4fcdb74f63aec1e974fa6a6}{%
+           family={Sreesurya},
+           familyi={S\bibinitperiod},
+           given={Ilayaraja},
+           giveni={I\bibinitperiod}}}%
+        {{hash=26c4b4b927038fcb0a2926b170903193}{%
+           family={Rathi},
+           familyi={R\bibinitperiod},
+           given={Himani},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9ddd177cec30bca7ee75042678e203fe}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Pooja},
+           giveni={P\bibinitperiod}}}%
+        {{hash=11402d0840c51a0662d148117bd1e7fa}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Tapan\bibnamedelima Kumar},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{957aaac34866611e9a7342130660ed1b}
+      \strng{fullhash}{957aaac34866611e9a7342130660ed1b}
+      \strng{fullhashraw}{957aaac34866611e9a7342130660ed1b}
+      \strng{bibnamehash}{957aaac34866611e9a7342130660ed1b}
+      \strng{authorbibnamehash}{957aaac34866611e9a7342130660ed1b}
+      \strng{authornamehash}{957aaac34866611e9a7342130660ed1b}
+      \strng{authorfullhash}{957aaac34866611e9a7342130660ed1b}
+      \strng{authorfullhashraw}{957aaac34866611e9a7342130660ed1b}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sentiment analysis, an application of machine learning in business is the process of identifying and cataloging comments, reviews, tweets, feedback, and even random rants according to the tone or sentiments conveyed by it. The data is analysed using machine learning approach of Long Short Term Memory (LSTM) rating the sentiments on a scale ranging from -100 to 100. A new proposed activation function is used for LSTM giving best results as compared to the existing Artificial Neural Network (ANN) techniques. Depending upon the mined opinion, the business intelligence tools evaluate the products or services of a company eventually resulting in the increase of the sales of that company. The results clearly show that BI extracted from SA is quite instrumental in driving business effectiveness and innovation.}
+      \field{issn}{1573-7721}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{12}
+      \field{number}{47}
+      \field{title}{Hypex: A Tool for Extracting Business Intelligence from Sentiment Analysis using Enhanced LSTM}
+      \field{volume}{79}
+      \field{year}{2020}
+      \field{pages}{35641\bibrangedash 35663}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/s11042-020-08930-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11042-020-08930-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11042-020-08930-6
+      \endverb
+    \endentry
+    \entry{KUMAR201941}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=335288500518d66ec091a9ad14920b6c}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sudhanshu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cec7d5f2706b79a454ca875c85dc5bc2}{%
+           family={Yadava},
+           familyi={Y\bibinitperiod},
+           given={Mahendra},
+           giveni={M\bibinitperiod}}}%
+        {{hash=50b08b39eb33aeea18b7ca1d5528c508}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Partha\bibnamedelima Pratim},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{fullhash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{fullhashraw}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{bibnamehash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{authorbibnamehash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{authornamehash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{authorfullhash}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \strng{authorfullhashraw}{1789aa1c9288bf72c70b1deecd9d7d11}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a novel multimodal framework for rating prediction of consumer products by fusing different data sources, namely physiological signals, global reviews obtained separately for the product and its brand. The reviews posted by global viewers are retrieved and processed using Natural Language Processing (NLP) technique to compute compound score considered as global rating. Also, electroencephalogram (EEG) signals of the participants were recorded simultaneously while watching different products on computer’s screen. From EEG, valence scores in terms of product rating are obtained using self-report towards each viewed product for acquiring local rating. A higher valence score corresponds to intrinsic attractiveness of the participant towards a product. Random forest based regression techniques is used to model EEG data to build a rating prediction framework considered as local rating. Furthermore, Artificial Bee Colony (ABC) based optimization algorithm is used to boost the overall performance of the framework by fusing global and local ratings. EEG dataset of 40 participants including 25 male and 15 female is recorded while viewing 42 different products available on e-commerce website. Experiment results are encouraging and suggest that the proposed ABC optimization approach can achieve lower Root Mean Square Error (RMSE) in rating prediction as compared to individual unimodal schemes.}
+      \field{issn}{1566-2535}
+      \field{journaltitle}{Information Fusion}
+      \field{title}{Fusion of EEG response and sentiment analysis of products review to predict customer satisfaction}
+      \field{volume}{52}
+      \field{year}{2019}
+      \field{pages}{41\bibrangedash 52}
+      \range{pages}{12}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.inffus.2018.11.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1566253517304918
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1566253517304918
+      \endverb
+      \keyw{Neuroscience,EEG,Sentiment analysis,Rating prediction,ABC,Multimodal}
+    \endentry
+    \entry{BoseSentiment}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=58ebf6486793013ab202d0806433d968}{%
+           family={Bose},
+           familyi={B\bibinitperiod},
+           given={Rajesh},
+           giveni={R\bibinitperiod}}}%
+        {{hash=97b721527448bfd916fdd5ce9ff8d760}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Raktim\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=af575fea8c3a6ed2d034058f1d5bb7d2}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Sandip},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fe3f1498f39b2142e609d16edb4b3531}{%
+           family={Sarddar},
+           familyi={S\bibinitperiod},
+           given={Debabrata},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=3b2b7c4d8d01338eca2aa7b0541aae7f}{%
+           family={Tuba},
+           familyi={T\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=96ad47e2bc1e55563ca504436a88235a}{%
+           family={Akashe},
+           familyi={A\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=aefd2493135c5810b465eeaf6249e110}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Springer Singapore}%
+      }
+      \strng{namehash}{62cdd11515824a03da02fad42160e528}
+      \strng{fullhash}{62cdd11515824a03da02fad42160e528}
+      \strng{fullhashraw}{62cdd11515824a03da02fad42160e528}
+      \strng{bibnamehash}{62cdd11515824a03da02fad42160e528}
+      \strng{authorbibnamehash}{62cdd11515824a03da02fad42160e528}
+      \strng{authornamehash}{62cdd11515824a03da02fad42160e528}
+      \strng{authorfullhash}{62cdd11515824a03da02fad42160e528}
+      \strng{authorfullhashraw}{62cdd11515824a03da02fad42160e528}
+      \strng{editorbibnamehash}{1b5bdc32eb66850815021eeba9862e39}
+      \strng{editornamehash}{1b5bdc32eb66850815021eeba9862e39}
+      \strng{editorfullhash}{1b5bdc32eb66850815021eeba9862e39}
+      \strng{editorfullhashraw}{1b5bdc32eb66850815021eeba9862e39}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Today, people are exchanging their thoughts through online Web forums, blogs, and different social media platforms. Sometimes, they are giving reviews and opinions on different products, brand, and their services. Their reviews toward a product not only improve the product quality but also influence purchase decisions of the consumers. Thus, product review analysis is a widely accepted platform where consumer can easily aware of their requirements. In this experiment, we track 568,454 fine food reviews of 74,258 products and 256,059 users on Amazon over a period of ten years. To analyze the result, we select six most popular products and users based on the plain text review, and NRC emotion lexicon is used which can be categorized eight basic emotions and two sentiments. Word cloud also help our research to make comparisons between the eight emotion categories. Our results show that how sentiment analysis will help to identify the consumers' behaviors and overcome those risks to meet the consumers' satisfaction.}
+      \field{booktitle}{Information and Communication Technology for Sustainable Development}
+      \field{isbn}{978-981-13-7166-0}
+      \field{title}{Sentiment Analysis on Online Product Reviews}
+      \field{year}{2020}
+      \field{pages}{559\bibrangedash 569}
+      \range{pages}{11}
+    \endentry
+    \entry{Wang12022016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7684de12cd5ce2de7cf8563861b30cb2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=952911611b90816f35b4fa25dc72ea9c}{%
+           family={and},
+           familyi={a\bibinitperiod},
+           given={Lijuan\bibnamedelima Zheng},
+           giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{fullhash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{fullhashraw}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{bibnamehash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{authorbibnamehash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{authornamehash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{authorfullhash}{09791800ea91f4a756e4457dcc5d3637}
+      \strng{authorfullhashraw}{09791800ea91f4a756e4457dcc5d3637}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Enterprise Information Systems}
+      \field{number}{2}
+      \field{title}{Sentiment classification of Chinese online reviews: a comparison of factors influencing performances}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{228\bibrangedash 244}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/17517575.2014.947635
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/17517575.2014.947635
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/17517575.2014.947635
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/17517575.2014.947635
+      \endverb
+    \endentry
+    \entry{Baj-Rogowska}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=0dce528f806555df964103781d8f55ca}{%
+           family={Baj-Rogowska},
+           familyi={B\bibinithyphendelim R\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0dce528f806555df964103781d8f55ca}
+      \strng{fullhash}{0dce528f806555df964103781d8f55ca}
+      \strng{fullhashraw}{0dce528f806555df964103781d8f55ca}
+      \strng{bibnamehash}{0dce528f806555df964103781d8f55ca}
+      \strng{authorbibnamehash}{0dce528f806555df964103781d8f55ca}
+      \strng{authornamehash}{0dce528f806555df964103781d8f55ca}
+      \strng{authorfullhash}{0dce528f806555df964103781d8f55ca}
+      \strng{authorfullhashraw}{0dce528f806555df964103781d8f55ca}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Sentiment analysis of Facebook posts: The Uber case}
+      \field{year}{2017}
+      \field{pages}{391\bibrangedash 395}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/INTELCIS.2017.8260068
+      \endverb
+    \endentry
+    \entry{9574641}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=91614d6ba26aab8a0c8ea57ccbaed0b1}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8cbf04eb12e08cac59a585e65fef6e9f}{%
+           family={Sameer},
+           familyi={S\bibinitperiod},
+           given={Syed},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e9a8d405fcabe7832b6aa538229570bf}{%
+           family={Muppavarapu},
+           familyi={M\bibinitperiod},
+           given={Harsha},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ef784c6765ef1a13bc552b52d513e6a2}{%
+           family={Enduri},
+           familyi={E\bibinitperiod},
+           given={Murali\bibnamedelima Krishna},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8ee1f8a280dc5c1c73877d760aab3622}{%
+           family={Anamalamudi},
+           familyi={A\bibinitperiod},
+           given={Satish},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{fullhash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{fullhashraw}{581f8392bd694586fe8b61b8270ee500}
+      \strng{bibnamehash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{authorbibnamehash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{authornamehash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{authorfullhash}{581f8392bd694586fe8b61b8270ee500}
+      \strng{authorfullhashraw}{581f8392bd694586fe8b61b8270ee500}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 13th International Conference on Computational Intelligence and Communication Networks (CICN)}
+      \field{title}{Sentiment Analysis on Zomato Reviews}
+      \field{year}{2021}
+      \field{pages}{34\bibrangedash 38}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CICN51697.2021.9574641
+      \endverb
+      \keyw{Sentiment analysis;Data analysis;Machine learning algorithms;Communication networks;Computational intelligence;sentiment analysis;EDA;zomato;reviews}
+    \endentry
+    \entry{BIRJALI2021107134}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2488f69fc657a3dd1e1451a900561aff}{%
+           family={Birjali},
+           familyi={B\bibinitperiod},
+           given={Marouane},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f9e46154ff879325ebc3d8ce379f0678}{%
+           family={Kasri},
+           familyi={K\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0a7d57fb2cb69596e8936fe0b31ee276}{%
+           family={Beni-Hssane},
+           familyi={B\bibinithyphendelim H\bibinitperiod},
+           given={Abderrahim},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{fullhash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{fullhashraw}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{bibnamehash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{authorbibnamehash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{authornamehash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{authorfullhash}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \strng{authorfullhashraw}{1c37c3ca9e4ecaf65748466c10a63ed5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sentiment analysis (SA), also called Opinion Mining (OM) is the task of extracting and analyzing people’s opinions, sentiments, attitudes, perceptions, etc., toward different entities such as topics, products, and services. The fast evolution of Internet-based applications like websites, social networks, and blogs, leads people to generate enormous heaps of opinions and reviews about products, services, and day-to-day activities. Sentiment analysis poses as a powerful tool for businesses, governments, and researchers to extract and analyze public mood and views, gain business insight, and make better decisions. This paper presents a complete study of sentiment analysis approaches, challenges, and trends, to give researchers a global survey on sentiment analysis and its related fields. The paper presents the applications of sentiment analysis and describes the generic process of this task. Then, it reviews, compares, and investigates the used approaches to have an exhaustive view of their advantages and drawbacks. The challenges of sentiment analysis are discussed next to clarify future directions.}
+      \field{issn}{0950-7051}
+      \field{journaltitle}{Knowledge-Based Systems}
+      \field{title}{A comprehensive survey on sentiment analysis: Approaches, challenges and trends}
+      \field{volume}{226}
+      \field{year}{2021}
+      \field{pages}{107134}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.knosys.2021.107134
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S095070512100397X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S095070512100397X
+      \endverb
+      \keyw{Sentiment analysis,Opinion mining,Machine learning,Lexicon-based,Sentiment classification,Deep learning}
+    \endentry
+    \entry{TadleFOMC}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=468ddf1d452fdcbe4f0c3722aaddb1ad}{%
+           family={Tadle},
+           familyi={T\bibinitperiod},
+           given={Raul\bibnamedelima Cruz},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{fullhash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{fullhashraw}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{bibnamehash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{authorbibnamehash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{authornamehash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{authorfullhash}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \strng{authorfullhashraw}{468ddf1d452fdcbe4f0c3722aaddb1ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I develop a semi-automated method that systematically evaluates the information in FOMC meeting documents. This method highlights economic conditions and calculates document sentiment indices that proxy for the FOMC's interest rate tilt. I compare the sentiment indices of FOMC minutes and their corresponding FOMC statements. Using high-frequency data, I then examine how these sentiment indices are associated with the fed funds futures contracts, broad equity, and real estate investment trust indices, and exchange rate valuation of several major currencies against the U.S. Dollar. I find that minutes sentiments have a statistically significant association with the fed funds futures rate and the U.S. dollar's valuation.}
+      \field{journaltitle}{Journal of Economics and Business}
+      \field{number}{C}
+      \field{title}{{FOMC minutes sentiments and their impact on financial markets}}
+      \field{volume}{118}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1016/j.jeconbus.2021.1
+      \endverb
+      \verb{urlraw}
+      \verb https://ideas.repec.org/a/eee/jebusi/v118y2022ics0148619521000394.html
+      \endverb
+      \verb{url}
+      \verb https://ideas.repec.org/a/eee/jebusi/v118y2022ics0148619521000394.html
+      \endverb
+      \keyw{Federal Reserve; Policy documents; Sentiment analysis; Monetary policy; Asset prices; FOMC}
+    \endentry
+    \entry{DohHowtoSay}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3599064c7447afdcdfa306ef51cd496d}{%
+           family={Doh},
+           familyi={D\bibinitperiod},
+           given={Taeyoung},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5aab05cbd99b01345f3029b3b6d12e4d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sungil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42969cff334a3760b9d5b6d030ba2b1a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shu-Kuei},
+           giveni={S\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{fullhash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{fullhashraw}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{bibnamehash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{authorbibnamehash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{authornamehash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{authorfullhash}{9b1b7430b2fa7709f1b138030962713f}
+      \strng{authorfullhashraw}{9b1b7430b2fa7709f1b138030962713f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Federal Reserve Bank of Kansas City Economic Review}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{How You Say It Matters: Text Analysis of FOMC Statements Using Natural Language Processing}
+      \field{volume}{106}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.18651/ER/v106n1DohKimYang
+      \endverb
+    \endentry
+    \entry{Xing2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=dbb470314a27197ece89d80f2ab139b1}{%
+           family={Xing},
+           familyi={X\bibinitperiod},
+           given={Frank\bibnamedelima Z.},
+           giveni={F\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=db089768b8819956d932b3c8db18d498}{%
+           family={Cambria},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7cece0607ab1010bafc8e806955e30dc}{%
+           family={Welsch},
+           familyi={W\bibinitperiod},
+           given={Roy\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{fullhash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{fullhashraw}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{bibnamehash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{authorbibnamehash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{authornamehash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{authorfullhash}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \strng{authorfullhashraw}{7e24f2d5ffb0d89b5ca1664b2dc04c73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Natural language processing (NLP), or the pragmatic research perspective of computational linguistics, has become increasingly powerful due to data availability and various techniques developed in the past decade. This increasing capability makes it possible to capture sentiments more accurately and semantics in a more nuanced way. Naturally, many applications are starting to seek improvements by adopting cutting-edge NLP techniques. Financial forecasting is no exception. As a result, articles that leverage NLP techniques to predict financial markets are fast accumulating, gradually establishing the research field of natural language based financial forecasting (NLFF), or from the application perspective, stock market prediction. This review article clarifies the scope of NLFF research by ordering and structuring techniques and applications from related work. The survey also aims to increase the understanding of progress and hotspots in NLFF, and bring about discussions across many different disciplines.}
+      \field{issn}{1573-7462}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{Natural language based financial forecasting: a survey}
+      \field{volume}{50}
+      \field{year}{2018}
+      \field{pages}{49\bibrangedash 73}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s10462-017-9588-9
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10462-017-9588-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10462-017-9588-9
+      \endverb
+    \endentry
+    \entry{ROGNONE2020101462}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=488dbe543749b626b080575aeb5f12c8}{%
+           family={Rognone},
+           familyi={R\bibinitperiod},
+           given={Lavinia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=79cb789878173baebf1a72b130327350}{%
+           family={Hyde},
+           familyi={H\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a329cf50139591f6b80ef22988ae0fcd}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={S.\bibnamedelimi Sarah},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{fullhash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{fullhashraw}{114ebe47db7024fd842b9b9145b99509}
+      \strng{bibnamehash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{authorbibnamehash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{authornamehash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{authorfullhash}{114ebe47db7024fd842b9b9145b99509}
+      \strng{authorfullhashraw}{114ebe47db7024fd842b9b9145b99509}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use high frequency intra-day data to investigate the influence of unscheduled currency and Bitcoin news on the returns, volume and volatility of the cryptocurrency Bitcoin and traditional currencies over the period from January 2012 to November 2018. Results show that Bitcoin behaves differently to traditional currencies. Traditional currencies typically experience a decrease in returns after negative news arrivals and an increase in returns following positive news whereas Bitcoin reacts positively to both positive and negative news. This suggests investor enthusiasm for Bitcoin irrespective of the sentiment of the news. This phenomenon is exacerbated during bubble periods. Conversely, cryptocurrency cyber-attack news and fraud news dampen this effect, decreasing Bitcoin returns and volatility. Our results contribute to the discussion on the nature of Bitcoin as a currency or an asset. They further inform practitioners about the characteristics of cryptocurrencies as a financial asset and inform regulators about the influence of news on Bitcoin volatility, particularly during bubble periods.}
+      \field{issn}{1057-5219}
+      \field{journaltitle}{International Review of Financial Analysis}
+      \field{title}{News sentiment in the cryptocurrency market: An empirical comparison with Forex}
+      \field{volume}{69}
+      \field{year}{2020}
+      \field{pages}{101462}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.irfa.2020.101462
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S105752192030106X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S105752192030106X
+      \endverb
+      \keyw{Digital currencies,Cryptocurrency,Bitcoin,News sentiment,Foreign exchange}
+    \endentry
+    \entry{KRAAIJEVELD2020101188}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4cb0b78278a829fcad9425861d87f0ea}{%
+           family={Kraaijeveld},
+           familyi={K\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=4103c6b3b05434b4155ff94e510f207f}{%
+           family={{De Smedt}},
+           familyi={D\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{fullhash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{fullhashraw}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{bibnamehash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{authorbibnamehash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{authornamehash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{authorfullhash}{f1be9238bc14128ee8887fa02e91f068}
+      \strng{authorfullhashraw}{f1be9238bc14128ee8887fa02e91f068}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cryptocurrencies have become a very popular topic recently, primarily due to their disruptive potential and reports of unprecedented returns. In addition, academics increasingly acknowledge the predictive power of Twitter for a wide variety of events and more specifically for financial markets. This paper studies to what extent public Twitter sentiment can be used to predict price returns for the nine largest cryptocurrencies: Bitcoin, Ethereum, XRP, Bitcoin Cash, EOS, Litecoin, Cardano, Stellar and TRON. By using a cryptocurrency-specific lexicon-based sentiment analysis approach, financial data and bilateral Granger-causality testing, it was found that Twitter sentiment has predictive power for the returns of Bitcoin, Bitcoin Cash and Litecoin. Using a bullishness ratio, predictive power is found for EOS and TRON. Finally, a heuristic approach is developed to discover that at least 1–14% of the obtained Tweets were posted by Twitter “bot” accounts. This paper is the first to cover the predictive power of Twitter sentiment in the setting of multiple cryptocurrencies and to explore the presence of cryptocurrency-related Twitter bots.}
+      \field{issn}{1042-4431}
+      \field{journaltitle}{Journal of International Financial Markets, Institutions and Money}
+      \field{title}{The predictive power of public Twitter sentiment for forecasting cryptocurrency prices}
+      \field{volume}{65}
+      \field{year}{2020}
+      \field{pages}{101188}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.intfin.2020.101188
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S104244312030072X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S104244312030072X
+      \endverb
+      \keyw{Cryptocurrencies,Time series analysis,Sentiment analysis,Natural Language Processing,Twitter,Bots}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,294 @@
+%% This is the ctufit-thesis example file. It is used to produce theses
+%% for submission to Czech Technical University, Faculty of Information Technology.
+%%
+%% This is version 1.3.8, built 29. 10. 2024.
+%% 
+%% Get the newest version from
+%% https://gitlab.fit.cvut.cz/theses-templates/FITthesis-LaTeX
+%%
+%%
+%% Copyright 2024, Tomas Novacek
+%% Copyright 2021, Eliska Sestakova and Ondrej Guth
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%  https://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%%
+%% The current maintainer of this work is Tomas Novacek.
+%% Alternatively, submit bug reports to the tracker at
+%% https://gitlab.fit.cvut.cz/theses-templates/FITthesis-LaTeX/issues
+%%
+%%
+
+% arara: xelatex
+% arara: biber
+% arara: xelatex
+% arara: xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CLASS OPTIONS
+% language: czech/english/slovak
+% thesis type: bachelor/master/dissertation
+% colour: bw for black&white OR no option for default colour scheme
+% electronic (oneside) or printed (twoside), twoside is default
+% paragraph - if passed, this optional argument sets paragraphs as the deepest level of headers, styles it, numbers it and adds it to Table of Content. Use with care! Normally, it is considered unwise to use it, since its too deep.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[czech,bachelor,oneside]{ctufit-thesis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FILL IN THIS INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ctufittitle{Analýza textu s využitím aspektové analýzy sentimentu a pokročilých metod NLP} % replace with the title of your thesis
+\ctufitauthorfull{Vilém Fiala} % replace with your full name (first name(s) and then family name(s) / surname(s)) including academic degrees
+\ctufitauthorsurnames{Fiala} % replace with your surname(s) / family name(s)
+\ctufitauthorgivennames{Vilém} % replace with your first name(s) / given name(s)
+\ctufitsupervisor{Ing.\,Lukáš Klein} % replace with name of your supervisor/advisor (include academic degrees)
+\ctufitdepartment{Katedra aplikované matematiky} % replace with the department of your defence
+\ctufityear{2025} % replace with the year of your defence
+\ctufitdeclarationplace{Praze} % replace with the place where you sign the declaration
+\ctufitdeclarationdate{\today} % replace with the date of signature of the declaration
+\ctufitabstractCZE{Tato bakalářská práce se zaměřuje na problematiku aspektové analýzy sentimentu (ABSA) v různých jazycích a tematických oblastech. Nejprve představuje klíčové poznatky ze zpracování přirozeného jazyka (NLP) a analýzy sentimentu včetně vybraných přístupů a modelů. Následně porovnává jejich výkonnost v češtině i angličtině a zkoumá, jak se modely chovají při aplikaci na odlišné domény. Výsledkem je ucelený přehled o efektivitě různých modelů a doporučení nejvhodnějších postupů pro práci s českými texty, zejména v oblasti mediálních analýz.}
+\ctufitabstractENG{This bachelor's thesis focuses on the problem of aspect-based sentiment analysis (ABSA) across different languages and thematic domains. It first presents the key concepts of natural language processing (NLP) and sentiment analysis, including a discussion of selected approaches and models. Subsequently, it compares their performance in both Czech and English, examining how the models behave when applied to different domains. The thesis concludes with a comprehensive overview of the effectiveness of various models and recommendations for the most suitable methods when working with Czech texts, particularly in the context of media analysis.}
+\ctufitkeywordsCZE{zpracování přirozeného jazyka, jazykové modely, předtrénované jazykové modely, aspektová analýza sentimentu, Python, BERT, Hugging Face}
+\ctufitkeywordsENG{natural language processing, language models, pretrained language models, aspect-based sentiment analysis, Python, BERT, Hugging Face}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END FILL IN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOMIZATION of this template
+% Skip this part or alter it if you know what you are doing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{iftex}[2020/03/06]
+\iftutex % XeLaTeX and LuaLaTeX
+    \RequirePackage{ellipsis}[2020/05/22] %ellipsis workaround for XeLaTeX
+\else
+    \errmessage{Only compilation with XeLaTeX or LuaLaTeX is allowed}
+    \stop
+\fi
+
+% hyperlinks
+\hypersetup{
+    pdfpagelayout=TwoPageRight,
+    colorlinks=false,
+    allcolors=decoration,
+    pdfborder={0 0 0.1}
+}
+
+% uncomment the following to hide all hyperlinks
+%\hypersetup{hidelinks}
+
+% uncomment the following to change the colour of all hyperlinks to CTU blue
+%\hypersetup{allbordercolors=decoration}
+
+\RequirePackage{pdfpages}[2020/01/28]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOMIZATION of this template END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DEMO CONTENTS SETTINGS
+% You may choose to modify this part.
+%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{dirtree}
+\usepackage{lipsum,tikz}
+\usepackage{xurl}
+\Urlmuskip=0mu plus 1mu
+\usepackage[style=iso-numeric]{biblatex}
+\addbibresource{text/bib-database.bib}
+\usepackage{listings} % typesetting of sources
+\usepackage{minted}
+\usepackage{csquotes}
+\usepackage{xevlna}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\usepackage{soul,xcolor}
+\newcommand{\bestscore}[1]{\setul{0.4ex}{0.8pt}\textbf{\ul{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DEMO CONTENTS SETTINGS END
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document} 
+\frontmatter\frontmatterinit % do not remove these two commands
+
+\thispagestyle{empty}\maketitle\thispagestyle{empty}\cleardoublepage % do not remove these four commands
+
+\includepdf[pages={1-}]{fialavi2-assignment.pdf} % replace this file with your thesis assignment generated from ProjectsFIT
+
+\imprintpage % do not remove this command
+\stopTOCentries
+%%%%%%%%%%%%%%%%%%%%%%
+% list of other contents END
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENT
+% FILL IN / MODIFY
+% This is a place to thank people for helping you. It is common to thank your supervisor.
+%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgmentpage}
+    Velmi rád bych poděkoval vedoucímu mé bakalářské práce, Ing. Lukáši Kleinovi, za cenné rady, podnětnou zpětnou vazbu a kontinuální podporu během celého procesu psaní. Mé poděkování rovněž patří společnosti Newton Media za poskytnutí prostoru k vypracování bakalářské práce v rámci mého pracovního zařazení. Dále děkuji Ing. Petře Pavlíčkové, Ph.D., za cenné konzultace a ochotu zodpovídat všechny mé dotazy, jež mi zásadně pomohly při samotném psaní.
+\end{acknowledgmentpage} 
+%%%%%%%%%%%%%%%%%%%
+% ACKNOWLEDGMENT END
+%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%
+% DECLARATION
+% FILL IN / MODIFY
+%%%%%%%%%%%%%%%%%%%
+% INSTRUCTIONS
+% ENG: choose one of approved texts of the declaration. DO NOT CREATE YOUR OWN. Find the approved texts at https://courses.fit.cvut.cz/SFE/download/index.html#_documents (document Declaration for FT in English)
+% CZE/SLO: Vyberte jedno z fakultou schvalenych prohlaseni. NEVKLADEJTE VLASTNI TEXT. Schvalena prohlaseni najdete zde: https://courses.fit.cvut.cz/SZZ/dokumenty/index.html#_dokumenty (prohlášení do ZP)
+\begin{declarationpage}
+Prohlašuji, že jsem předloženou práci vypracoval samostatně a že jsem uvedl veškeré použité informační zdroje v souladu s Metodickým pokynem o dodržování etických principů při přípravě vysokoškolských závěrečných prací.
+
+Beru na vědomí, že se na moji práci vztahují práva a povinnosti vyplývající ze zákona č. 121/2000 Sb., autorského zákona, ve znění pozdějších předpisů. V souladu s ust. § 2373 odst. 2 zákona č. 89/2012 Sb., občanský zákoník, ve znění pozdějších předpisů, tímto uděluji nevýhradní oprávnění (licenci) k užití této mojí práce, a to včetně všech počítačových programů, jež jsou její součástí či přílohou a veškeré jejich dokumentace (dále souhrnně jen „Dílo“), a to všem osobám, které si přejí Dílo užít. Tyto osoby jsou oprávněny Dílo užít jakýmkoli způsobem, který nesnižuje hodnotu Díla a za jakýmkoli účelem (včetně užití k výdělečným účelům). Toto oprávnění je časově, teritoriálně i množstevně neomezené.
+
+Prohlašuji, že jsem v průběhu příprav a psaní závěrečné práce použil nástroje umělé
+inteligence. Vygenerovaný obsah jsem ověřil. Stvrzuji, že jsem si vědom, že za obsah
+závěrečné práce plně zodpovídám.
+\end{declarationpage}
+%%%%%%%%%%%%%%%%%%%
+% DECLARATION END
+%%%%%%%%%%%%%%%%%%%
+
+\printabstractpage % do not remove this command
+
+%%%%%%%%%%%%%%%%%%%
+% SUMMARY
+% FILL IN / MODIFY
+% OR REMOVE ENTIRELY (upon agreement with your supervisor)
+% (appropriate to remove in most theses)
+%%%%%%%%%%%%%%%%%%%
+% \begin{summarypage}
+% \section*{Summary section}
+% 
+% \lipsum[1][1-8]
+% 
+% \section*{Summary section}
+% 
+% \lipsum[2][1-6]
+% 
+% \section*{Summary section}
+% 
+% \lipsum[3]
+% 
+% \section*{Summary section}
+% 
+% \lipsum[2]
+% 
+% \section*{Summary section}
+% 
+% \lipsum[1][1-8] Lorem lorem lorem.
+% \end{summarypage}
+%%%%%%%%%%%%%%%%%%%
+% SUMMARY END
+%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents % do not remove this command
+%%%%%%%%%%%%%%%%%%%%%%
+% list of other contents: figures, tables, code listings, algorithms, etc.
+% add/remove commands accordingly
+%%%%%%%%%%%%%%%%%%%%%%
+\listoffigures % list of figures
+\listoftables % list of tables
+\thectufitlistingscommand
+
+%%%%%%%%%%%%%%%%%%%
+% ABBREVIATIONS
+% FILL IN / MODIFY
+% OR REMOVE ENTIRELY
+% List the abbreviations in lexicography order.
+%%%%%%%%%%%%%%%%%%%
+\chapter{\thectufitabbreviationlabel}
+\begin{longtable}{rl}
+ABSA & Aspect-based sentiment analysis \\
+ACD & Aspect category detection \\
+ACOS & Aspect-Category-Opinion-Sentiment Quadruple Extraction \\
+ACSA & Aspect Category Sentiment Analysis \\
+ALBERT & A Lite BERT \\
+AOPE & Aspect-Opinion Pair Extraction \\
+ASC & Aspect sentiment classification \\
+ASTE & Aspect Sentiment Triplet Extraction \\
+ATE & Aspect term extraction \\
+BERT & Bidirectional Encoder Representations from Transformers \\
+BPE & Byte-pair encoding \\
+CLM & Conventional language models \\
+CNN & Convolutional neural networks \\
+DeBERTa & Decoding-enhanced BERT with Disentangled Attention \\
+E2E-ABSA & End-to-End ABSA \\
+FERNET & Flexible Embedding Representation NETwork \\
+GPT & Generative Pre-training Transformer \\
+LLM & Large language model \\
+LM & Language model \\
+LSTM & Long Short Term Memory \\
+MAMS & Multi-Aspect Multi-Sentiment \\
+mBERT & Multilingual BERT \\
+MemN2N & End-to-End Memory Network \\
+MemNN & Memory networks \\
+NER & Named entity recognition \\
+NB & Naive Bayes \\
+NLG & Natural language generation \\
+NLP & Natural language processing \\
+NLU & Natural language understanding \\
+OATS & Opinion Aspect Target Sentiment \\
+OPE & Opinion term extraction \\
+PLM & Pre-trained language models \\
+RNN & Recurrent neural networks \\
+RoBERTa & Robustly Optimized BERT Pretraining Approach \\
+SRL & Semantic Role Labeling \\
+SVM & Support vector machines \\
+TASD & Target Aspect Sentiment Detection \\
+UABSA & Unified ABSA \\
+XLM & Cross-lingual language models \\
+\end{longtable}
+%%%%%%%%%%%%%%%%%%%
+% ABBREVIATIONS END
+%%%%%%%%%%%%%%%%%%%
+\resumeTOCentries
+\mainmatter\mainmatterinit % do not remove these two commands
+%%%%%%%%%%%%%%%%%%%
+% THE THESIS
+% MODIFY ANYTHING BELOW THIS LINE
+%%%%%%%%%%%%%%%%%%%
+
+\include{text/uvod}
+\include{text/kapitola1}
+\include{text/kapitola2}
+\include{text/kapitola3} 
+\include{text/kapitola4}
+\include{text/kapitola5}
+\include{text/zaver}
+
+
+\appendix\appendixinit % do not remove these two commands
+
+\include{text/appendix} % include `appendix.tex' from `text/' subdirectory
+
+\backmatter % do not remove this command
+
+
+\begingroup
+\sloppy              % Loosens the line-breaking constraints
+\printbibliography % print out the BibLaTeX-generated bibliography list
+\endgroup
+
+\include{text/medium} % include `medium.tex' from `text/' subdirectory
+
+\end{document}

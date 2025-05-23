@@ -1,0 +1,825 @@
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\setcounter {tocdepth}{-1}
+\contentsline {chapter}{{Poděkování}}{iii}{chapter*.1}%
+\contentsline {chapter}{\thectufitdeclarationlabel }{iv}{chapter*.2}%
+\contentsline {chapter}{{Abstrakt}}{v}{chapter*.3}%
+\contentsline {chapter}{\thectufitabbreviationlabel }{xiii}{chapter*.8}%
+\setcounter {tocdepth}{3}
+\contentsline {chapter}{Úvod}{1}{chapter*.9}%
+\contentsline {section}{Cíle}{2}{section*.10}%
+\contentsline {chapter}{\numberline {1}Zpracování jazyka pomocí umělé inteligence}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Zpracování přirozeného jazyka -- NLP}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Dvě základní složky NLP}{4}{subsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}Pochopení přirozeného jazyka -- NLU}{4}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Fonologická rovina}{4}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Morfologická rovina}{4}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Lexikální rovina}{4}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Syntaktická rovina}{5}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Sémantická rovina}{5}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Diskurzní rovina}{5}{subsubsection.1.1.1.1}%
+\contentsline {paragraph}{Pragmatická rovina}{5}{subsubsection.1.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Problematika vícejazyčného zpracování}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Využití NLP v praxi}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Strojový překlad}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Kategorizace textu}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Extrakce informací}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Sumarizace}{6}{subsection.1.1.3}%
+\contentsline {paragraph}{Dialogové systémy}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Jazykové modely -- LM}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Tokenizace}{8}{subsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}Tokeny v různých jazycích}{8}{subsubsection.1.2.1.1}%
+\contentsline {subsection}{\numberline {1.2.2}Předtrénované jazykové modely -- PLMs}{8}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}Transformátorová architektura}{9}{subsubsection.1.2.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.2}Předtrénování}{9}{subsubsection.1.2.2.2}%
+\contentsline {paragraph}{Missing token prediction}{9}{subsubsection.1.2.2.2}%
+\contentsline {paragraph}{Další metody předtrénování}{10}{subsubsection.1.2.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.3}Fine-tuning}{10}{subsubsection.1.2.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Decoder vs Encoder}{10}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}Decoder-only modely}{11}{subsubsection.1.2.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}Encoder-only modely}{11}{subsubsection.1.2.3.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.3}Jaký model pro sentiment?}{11}{subsubsection.1.2.3.3}%
+\contentsline {chapter}{\numberline {2}Analýza sentimentu}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Techniky analýzy sentimentu}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Slovníková metoda}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Tradiční přístupy strojového učení}{13}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Hluboké učení}{13}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Konvoluční neuronové sítě}{14}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Rekurentní neuronové sítě}{14}{subsubsection.2.1.3.2}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}Sítě s dlouhou krátkodobou pamětí}{14}{subsubsection.2.1.3.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.4}Další metody hlubokého učení v NLP}{15}{subsubsection.2.1.3.4}%
+\contentsline {paragraph}{Mechanismus pozornosti s RNN}{15}{subsubsection.2.1.3.4}%
+\contentsline {paragraph}{Paměťové sítě}{15}{subsubsection.2.1.3.4}%
+\contentsline {paragraph}{Rekurzivní neuronové sítě}{15}{subsubsection.2.1.3.4}%
+\contentsline {subsection}{\numberline {2.1.4}Hybridní metoda}{15}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Úrovně analýzy sentimentu}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Dokumentová úroveň}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Větná úroveň}{16}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Aspektová úroveň}{16}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Aspektová analýza sentimentu}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Základní dílčí úlohy ABSA}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Složené úlohy ABSA}{18}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Extrakce dvojic}{18}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Extrakce trojic}{19}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Extrakce čtveřic}{19}{subsubsection.2.3.2.3}%
+\contentsline {subsection}{\numberline {2.3.3}Využití transformátorových modelů v ABSA}{20}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Datasety}{20}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Složené úlohy ABSA}{20}{subsubsection.2.3.3.2}%
+\contentsline {section}{\numberline {2.4}Využití analýzy sentimentu}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Obchodní oblast}{22}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Doporučující systémy}{23}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Zdravotnická oblast}{23}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Otevřené problémy analýzy sentimentu}{24}{section.2.5}%
+\contentsline {paragraph}{Sarkasmus}{24}{section.2.5}%
+\contentsline {paragraph}{Vícejazyčná analýza sentimentu}{24}{section.2.5}%
+\contentsline {paragraph}{Problém domén}{24}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Český jazyk a analýza sentimentu}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Předešlé práce na analýzu sentimentu v češtině}{25}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Problematika analýzy sentimentu v češtině}{25}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Porovnání různých modelů}{26}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Představení nových technik}{26}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Datasety v češtině}{26}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}Analýza sentimentu na větné úrovni}{27}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Aspektová analýza sentimentu}{27}{subsubsection.3.1.4.2}%
+\contentsline {subsection}{\numberline {3.1.5}České jazykové modely}{27}{subsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.5.1}Český BERT -- Czert}{27}{subsubsection.3.1.5.1}%
+\contentsline {subsubsection}{\numberline {3.1.5.2}Český RoBERTa -- RobeCzech}{28}{subsubsection.3.1.5.2}%
+\contentsline {subsubsection}{\numberline {3.1.5.3}FERNET -- BERT i RoBERTa}{28}{subsubsection.3.1.5.3}%
+\contentsline {section}{\numberline {3.2}Shrnutí dosavadního výzkumu}{28}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Metodologie a postup trénování}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Datasety}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Příprava datasetů}{30}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dataset SemEval-2014}{30}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Recenze notebooků}{31}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Recenze restaurací}{32}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Český dataset recenzí restaurací}{32}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Data z mediální domény}{34}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}Popis generování dat}{35}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}Popis samotného datasetu}{35}{subsubsection.4.1.4.2}%
+\contentsline {section}{\numberline {4.2}Vybrané metody}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Vybrané modely}{38}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Inovativní modely}{38}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}BERT}{38}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}mBERT}{39}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}RoBERTa}{40}{subsubsection.4.3.1.3}%
+\contentsline {subsubsection}{\numberline {4.3.1.4}XLM-RoBERTa}{40}{subsubsection.4.3.1.4}%
+\contentsline {subsubsection}{\numberline {4.3.1.5}DeBERTa-V3}{40}{subsubsection.4.3.1.5}%
+\contentsline {subsubsection}{\numberline {4.3.1.6}ModernBERT}{41}{subsubsection.4.3.1.6}%
+\contentsline {subsection}{\numberline {4.3.2}Jazykově adaptované modely}{41}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}SlavicBERT}{42}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Český BERT -- Czert}{42}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}Český RoBERTa -- RobeCzech}{42}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}Český BERT a RoBERTa -- FERNET}{42}{subsubsection.4.3.2.4}%
+\contentsline {section}{\numberline {4.4}Popis přístupu}{43}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Trénovací prostředí}{43}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Použité knihovny}{43}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Popis částí kódu}{44}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}Tokenizace}{44}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}Vyhodnocovací metrika}{45}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}Trénovací struktura}{45}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}Predikace sentimentu}{47}{subsubsection.4.4.3.4}%
+\contentsline {section}{\numberline {4.5}Vyhodnocovací metriky a praktické testy}{48}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Vyhodnocovací metriky}{48}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Praktické testy}{48}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Recenze notebooků L}{49}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Recenze restaurací R}{49}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}Mediální texty M}{50}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}Obecná doména O}{50}{subsubsection.4.5.2.4}%
+\contentsline {chapter}{\numberline {5}Výsledky a porovnání}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Výsledky}{52}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Recenze notebooků -- angličtina}{53}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Recenze restaurací -- angličtina}{54}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Recenze restaurací -- čeština}{55}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Mediální články -- čeština}{56}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Porovnání použitých modelů a metod}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Porovnání metod -- Klasická vs. QA-M}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Porovnání modelů na anglických datech}{58}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Porovnání modelů na různých jazycích}{59}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Porovnání modelů na českých datech}{59}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Shrnutí a doporučení}{60}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Anglické datasety}{60}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}České datasety}{61}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Doporučení pro české mediální texty}{61}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Analýza sentimentu pomocí LLM}{61}{subsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.4.1}Popis modelů a použitého promptu}{62}{subsubsection.5.3.4.1}%
+\contentsline {subsubsection}{\numberline {5.3.4.2}Výsledky a závěr k LLM}{62}{subsubsection.5.3.4.2}%
+\contentsline {section}{\numberline {5.4}Další výzkum}{63}{section.5.4}%
+\contentsline {chapter}{Závěr}{64}{chapter*.36}%
+\contentsline {chapter}{\numberline {A}Tabulky výsledků trénování a praktických testů}{65}{appendix.A}%
+\contentsline {paragraph}{Trénovací tabulky}{65}{appendix.A}%
+\contentsline {paragraph}{Tabulky praktických testů}{65}{appendix.A}%
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {czech}{}\relax 
+\contentsline {chapter}{Obsah příloh}{99}{appendix*.54}%

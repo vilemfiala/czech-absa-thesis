@@ -1,0 +1,52 @@
+\chapter{Český jazyk a analýza sentimentu}
+Výzkum zpracování přirozeného jazyka se soustředí především na nejčastěji používané jazyky, zejména angličtinu a čínštinu. Tyto jazyky disponují rozsáhlými korpusy, dobře zdokumentovanými benchmarky a nové modely jsou na nich zpravidla validovány jako první (například \emph{ModernBERT}~\cite{warner2024smarterbetterfasterlonger}, který je v době psaní dostupný pouze pro angličtinu).  
+
+U méně rozšířených jazyků, k nimž patří čeština, je situace odlišná. Omezená dostupnost dat, menší komunita a morfologická složitost vedou k nižší míře experimentálního ověřování i praktických aplikací. Tato kapitola proto shrnuje dosavadní práci v oblasti analýzy sentimentu pro český jazyk, popisuje přínos publikovaných studií a diskutuje jejich vliv na další rozvoj metod.
+
+\section{Předešlé práce na analýzu sentimentu v češtině}
+Tato sekce se zaměřuje na jednotlivé práce a studie, které se věnují různým aspektům analýzy sentimentu v češtině. Pokrývá témata jako definice sentimentu v českém jazyce, porovnání různých modelů na českých datasetech, představování nových datasetů, a dokonce i vývoj jazykových modelů specializovaných pro češtinu.
+
+\subsection{Problematika analýzy sentimentu v češtině}
+V knize~\cite{veselovska-2017} autorka detailně zkoumá problematiku sentimentu v českém jazyce. Popisuje různé jazykové roviny, které byly představeny v sekci~\ref{NLU}, a vysvětluje jejich chování v českém jazyce, přičemž uvádí množství konkrétních příkladů. Také se zaměřuje na emocionální struktury (Formální reprezentace emocionálních struktur), přičemž popisuje jejich analýzu a roli v rámci sentimentu.
+
+Autorka se dále věnuje různým podúkolům. Nejprve zkoumá analýzu sentimentu na větné úrovni v českém jazyce. V této sekci jsou porovnány tři klasifikátory, které jsou testovány na různých datasetech z českých webových stránek.~\cite{veselovska-2017}
+
+Následně se zaměřuje na aspektovou analýzu sentimentu, která využívá dataset SemEval-2014~\cite{pontiki-etal-2014-semeval}, stejně jako v této práci. Avšak \uv{targety} jsou hledány pomocí již známých targetů z trénovacích dat, což znamená, že tento model není dostatečně robustní a nebude fungovat v jiných doménách. Tuto vytvořenou pipeline pak adaptovala i pro češtinu.~\cite{veselovska-2017}
+
+V poslední části autorka popisuje řešení problému TASD v rámci SemEval-2016 Task 5~\cite{pontiki-etal-2016-semeval}. Pro tento úkol byly použity metody hlubokého učení, konkrétně LSTM. Tento přístup vedl k vítězství ve dvou kategoriích (jazycích), ruštině a turečtině. Avšak výsledky nebyly tak uspokojivé v jiných jazycích.~\cite{veselovska-2017}
+
+\subsection{Porovnání různých modelů}
+V díle~\cite{_ano_2019} si autoři kladli za cíl provést přehled a porovnání různých tradičních přístupů strojového učení. Použili dva datasety, jeden z Facebooku a druhý z Mall.cz, přičemž se zaměřili pouze na analýzu sentimentu na větné úrovni. Testovali různé modely, jako jsou SVM, logistická regrese (Maximum Entropy) a Naivní Bayes. Dále vyzkoušeli i náhodné lesy a vícevrstvé neuronové sítě. Nejlepší výsledky dosáhl model SVM na datasetu Mall.cz a model logistické regrese na datasetu Facebook.
+
+\subsection{Představení nových technik}
+Zajímavý přístup k řešení ACSA předkládají autoři v díle~\cite{priban-prazak-2023-improving}. Spojují dvě úlohy z NLP: aspektovou analýzu sentimentu (ABSA) a sémantické značkování rolí (\emph{Semantic Role Labeling, SRL}). Využívají model ELECTRA~\cite{clark2020electrapretrainingtextencoders}, který je výpočetně méně náročný než modely založené na BERTu. Představují několik způsobů propojení ABSA encoderu a SRL encoderu. V češtině dosáhli zlepšení v obou podúlohách (extrakce kategorií a určení jejich sentimentu), zatímco v angličtině se výsledky nezvýšily -- tam nadále dominují rozsáhlejší modely typu BERT.
+
+\subsection{Datasety v češtině}
+Jedním z hlavních úskalí analýzy sentimentu v češtině je omezená dostupnost kvalitních datových sad. Na rozdíl od angličtiny, pro niž existuje rozsáhlé množství datasetů, zůstává čeština podstatně hůře pokryta. Řada studií se proto zaměřuje na tvorbu nových datasetů, jež mají sloužit jako základ pro další rozvoj a zlepšování modelů v českém jazyce. V této části jsou představeny datové sady určené jak pro sentiment na větné úrovni, tak pro aspektovou analýzu sentimentu.
+
+\subsubsection{Analýza sentimentu na větné úrovni}
+Tvorbou větně anotovaného datasetu se zabývají autoři v článku~\cite{habernal-etal-2013-sentiment}. Autoři shromáždili příspěvky z devíti českých facebookových stránek a manuálně je označili sentimentem, aby dataset posloužil pro trénink různých modelů. Porovnali výkon SVM a logistické regrese (v článku označované jako \emph{Maximum Entropy}) na vlastním korpusu i na filmových recenzích z ČSFD a produktových recenzích z Mall.cz. Pro každý model otestovali více sad vstupních příznaků a sledovali jejich vliv na přesnost. Výsledky se pohybovaly na podobné úrovni jako ve studii~\cite{_ano_2019}, která s tímto korpusem experimentovala s širším spektrem modelů.
+
+\subsubsection{Aspektová analýza sentimentu}
+Ve studii~\cite{steinberger-etal-2014-aspect} autoři představili první český dataset připravený pro ABSA. Korpus vychází z recenzí restaurací, podobně jako dataset SemEval-2014~\cite{pontiki-etal-2014-semeval}, a je anotován pro úlohy ACSA i E2E-ABSA. V této práci bude použit jako jeden z datasetů, na kterých budou natrénovány všechny vybrané modely a následně budou porovnány výsledky mezi češtinou a angličtinou.
+
+Na tento korpus navázala práce~\cite{smid-etal-2024-czech}, jejímž cílem bylo vytvořit dataset pro náročnější úlohy ABSA, konkrétně TASD. Nový dataset byl otestován také na jednodušších úlohách, například ATE, ACD a E2E-ABSA. Autoři se inspirovali strukturou datasetu SemEval-2016~\cite{pontiki-etal-2016-semeval}, který je připraven ve stejném formátu pro více jazyků.
+
+\subsection{České jazykové modely}
+Většina nových architektur jazykových modelů je primárně validována na angličtině; vícejazyčné varianty sice později pokrývají až 100 jazyků, avšak jejich kapacita se mezi jazyky dělí nerovnoměrně. Specializované modely trénované čistě na českých datech proto často podávají stabilnější a přesnější výsledky. Následující studie se proto zaměřují na adaptaci vybraných architektur přímo pro češtinu. Všechny zde popsané modely (a další použité v experimentech) jsou podrobněji představené v sekci \ref{Modely}.
+
+\subsubsection{Český BERT -- Czert}
+Autoři studie~\cite{sido2021czertczechbertlike} ze Západočeské univerzity vytvořili jazykový model Czert, který je jako první jazykový model natrénovaný výhradně na českých datech. Czert vznikl ve dvou variantách: Czert-B založený na architektuře BERT~\cite{devlin2019bert} a Czert-A vycházející z modelu ALBERT~\cite{lan2020albertlitebertselfsupervised}. V této práci je použita varianta Czert-B, jejíž podrobnější popis lze nalézt v sekci~\ref{Czert}.
+
+\subsubsection{Český RoBERTa -- RobeCzech}
+Na Czert navázal model RobeCzech, který využívá architekturu RoBERTa a je rovněž předtrénován na českých datech. Autoři jej otestovali na pěti úlohách včetně analýzy sentimentu a ve všech případech překonal model Czert.~\cite{Straka_2021} Podrobnější popis tohoto modelu lze nalézt v sekci~\ref{RobeCzech}.
+
+\subsubsection{FERNET -- BERT i RoBERTa}
+Západočeská univerzita dále publikovala dvojici modelů FERNET (Flexible Embedding Representation NETwork) \cite{Lehe_ka_2021}. První varianta vychází z~BERT-u, druhá z~RoBERTa; obě rozšiřují dostupné české modely a umožňují širší srovnání na domácích datech. Podrobný popis přináší sekce \ref{FERNET}.
+
+\section{Shrnutí dosavadního výzkumu}
+Jak ukazuje tento přehled, existuje řada studií zaměřujících se na NLP a analýzu sentimentu v českém jazyce. Tato díla přinášejí užitečné poznatky, ať už v oblasti analýzy sentimentu na větné úrovni, nebo v analýze sentimentu na úrovni aspektů. Většina těchto studií, která porovnává různé modely na různých datasetech, využívá tradiční metody strojového učení, jako jsou SVM, Naivní Bayes nebo logistická regrese. Tyto metody však, ve srovnání s moderními metodami hlubokého učení, konkrétně s transformátorovými modely, vykazují omezenější výkonnost.
+
+Na druhou stranu, novější výzkumy, které se soustředí na tvorbu datasetů a vývoj českých jazykových modelů, se snaží připravit českou komunitu na použití novějších přístupů. Tyto studie nejen že vytvářejí potřebné korpusy pro trénování a testování modelů, ale také otevírají cestu k využívání transformátorových modelů, které jsou schopny efektivněji pracovat s jazykovými nuancemi a hledat ideální řešení pro různé úlohy ABSA. Tento přístup znamená výrazný krok vpřed, protože umožňuje dosáhnout vyšší přesnosti a lepších výsledků na složitějších úlohách analýzy sentimentu.
+
+Tato práce navazuje na poznatky těchto studií a vychází z dosud zpracovaných datasetů pro českou aspektovou analýzu sentimentu. Dále bude využívat český jazykové modely a porovnávat jejich výkon mezi sebou a i s jinými modely, čímž bude přispívat k rozvoji analýzy sentimentu v češtině a hledání ideálních metod pro konkrétní úkoly ABSA.

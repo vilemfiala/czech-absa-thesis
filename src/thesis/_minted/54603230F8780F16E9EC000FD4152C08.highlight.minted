@@ -1,0 +1,14 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{tokenize\PYGZus{}function}\PYG{p}{(}\PYG{n}{example}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{question\PYGZus{}string} \PYG{o}{=} \PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{What is the sentiment of aspect: }\PYG{l+s+se}{\PYGZbs{}}
+\PYG{l+s+s2}{    }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{example}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{aspect}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{?}\PYG{l+s+s2}{\PYGZdq{}}
+
+    \PYG{n}{encoding} \PYG{o}{=} \PYG{n}{tokenizer}\PYG{p}{(}
+        \PYG{n}{text}\PYG{o}{=}\PYG{n}{example}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{text}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{,}
+        \PYG{n}{text\PYGZus{}pair}\PYG{o}{=}\PYG{n}{question\PYGZus{}string}\PYG{p}{,}
+        \PYG{n}{truncation}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,}
+        \PYG{n}{padding}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{max\PYGZus{}length}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+        \PYG{n}{max\PYGZus{}length}\PYG{o}{=}\PYG{l+m+mi}{256}
+    \PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{encoding}
+\end{MintedVerbatim}

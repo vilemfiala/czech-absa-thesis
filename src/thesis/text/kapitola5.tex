@@ -1,0 +1,235 @@
+\chapter{Výsledky a porovnání}\label{Results}
+V této kapitole jsou prezentovány výsledky trénování všech modelů, přičemž během testování v jednotlivých doménách budou modely vzájemně porovnány podle jejich schopnosti správně predikovat sentiment a zmapovat danou doménu. Pro každou doménu bude vybrán nejlepší model, který vykázal nejlepší výsledky. Následně budou porovnány výsledky mezi jednotlivými doménami a jazyky, aby bylo otestováno, jaké modely měli konzistentní výsledky i v jiných doménách. Kromě toho budou porovnány obě použité metody trénování, aby se zjistilo, zda některá z nich vykazovala konstantně lepší výsledky než druhá.
+
+Na závěr kapitoly bude uvedeno shrnutí výsledků trénování. Tento přehled bude zahrnovat výběr nejlepších modelů pro každý jazyk na základě dosažených výsledků. Také proběhne doporučení pro mediální texty v českém jazyce. Dále budou otestovány známé velké jazykové modely (\emph{Large Language Models, LLM}), které v této práci nebyly použity, aby byly porovnány s menšími modely, použitými v této práci. Praktické testy provedené na těchto modelech zhodnotí jejich schopnost správně predikovat sentiment bez potřeby speciálního dotrénování (\emph{fine-tuning}) pouze s použitím jednoho promptu. Nakonec bude nastíněn možný výhled do budoucna, jakým směrem by se mohl tento výzkum v oblasti aspektové analýzy sentimentu posunout.
+
+\section{Výsledky}
+V této sekci budou uvedeny výsledky pro jednotlivé domény. Nejprve budou prezentovány nejlepší modely, ve velikostí \emph{base} a \emph{large}, pro každou doménu a následně se shrnou obecné výsledky trénování napříč všemi modely. Dále budou porovnány výsledky praktických testů, aby se zjistilo, zda modely s nejlepšími výsledky na testovacích datech dosahovaly také nejlepších výsledků v praktických testech. U každé domény bude ukázána menší tabulka těch nejlepších modelů. Podrobnější tabulky obsahující všechny informace o trénování, výsledcích na testovacích datech a praktických testech pro všechny modely jsou uvedeny v příloze~\ref{appendix}.
+
+\subsection{Recenze notebooků -- angličtina}
+Nejlepší výsledky byly dosaženy nejnovějšími modely. Vítězem se stal model typu ModernBERT, a to jak verze \emph{base}, tak verze \emph{large}, které dosáhly nejlepších výsledků ve všech měřených metrikách na testovacích datech. U verze \emph{base} měl lepší výsledky model s metodou \emph{QA-M}, zatímco u verze \emph{large} to byl model s klasickou metodou. Z výsledků v tabulce~\ref{tab:laptopEngsmalltable} je patrné, že mezi těmito dvěma velikostmi nebyl velký rozdíl, lišily se pouze o desetiny procenta. Model DeBERTa vykázal také velmi dobré výsledky, které byly dokonce lepší než ModernBERT s klasickou metodou.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{model} & \textbf{přesnost} & \textbf{v. F1} & \textbf{m. F1} \\ \hline
+        deberta-v3-base & \textbf{82,76} & \textbf{82,29} & \textbf{80,60} \\ \hline
+        deberta-v3-baseQA & 81,90 & 81,67 & \textbf{80,31} \\ \hline
+        ModernBERT-base & 81,47 & 81,04 & 79,23 \\ \hline
+        \textbf{ModernBERT-baseQA} & \bestscore{84,48} & \bestscore{84,19} & \bestscore{82,65} \\ \hline
+        \textbf{ModernBERT-large} & \bestscore{84,91} & \bestscore{84,49} & \bestscore{82,97} \\ \hline
+        ModernBERT-largeQA & \textbf{82,33} & \textbf{81,79} & 79,86 \\ \hline
+    \end{tabular}
+    \caption[Recenze notebooků v angličtině -- malá tabulka]%
+    {Tabulka nejlepších modelů pro dataset Recenze notebooků v angličtině ukazující vyhodnocovací metriky na testovacích datech}
+    \label{tab:laptopEngsmalltable}    
+\end{table}
+
+Z podrobnější tabulky~\ref{tab:laptopEng1} je zřejmé, že modely vykazovaly malé rozpětí výsledků, testovací přesnost se pohybovala mezi 75,43~\% a 84,91~\%. Tento rozdíl je způsoben především vícejazyčnou verzí modelu BERT, mBERT, který vykázal horší výsledky o více než 4~\%. Bez něho se výsledky pohybovaly mezi 79,31~\% a 84,91~\%. Tabulka~\ref{tab:laptopEng2} ukazuje výsledky modelů trénovaných na češtině na anglických datech. Jak je patrné, tyto modely měly podstatně horší výsledky, přičemž testovací přesnost se pohybovala mezi 65,09~\% a 72,25~\%, což je téměř o 10~\% horší než u modelů trénovaných na anglických datech.
+
+Praktické testy odhalily dva modely, které predikovaly všechny hodnoty správně: \emph{roberta-base} a \emph{ModernBERT-large}, oba využívající metodu QA-M. I když tyto modely neměly nejlepší výsledky na testovacích datech (ani v rámci vážené F1, ani macro F1), dokázaly jako jediné správně predikovat sentiment ve všech praktických testech. Ostatní modely uvedené v tabulce~\ref{tab:laptopEngsmalltable} měly 11 správných odpovědí z 12. Důvodem, proč modely neměly dokonalé výsledky, byl test \emph{M1}, který se zaměřuje na neutrální sentiment. Tento sentiment byl v datasetu zastoupen pouze 20~\% (viz graf~\ref{fig:SentimentDistribution}), což vedlo k podcenění jeho predikce během trénování (proto je macro F1 u většiny modelů nižší než přesnost). Výsledky všech modelů na praktických testech jsou v tabulkách~\ref{tab:laptopEng3}~a~\ref{tab:laptopEng4}.
+
+\subsection{Recenze restaurací -- angličtina}
+Nejlepší výsledky opět dosáhly nejnovější modely. Pro modely \emph{large} to byl opět ModernBERT, zatímco u modelů \emph{base} dosáhl nejlepších výsledků model typu RoBERTa, který měl dokonce lepší výsledky než \emph{ModernBERT-large}. Oba tyto modely měly nejlepší skóre ve všech měřených metrikách a oba byly natrénovány pomocí klasické metody. Tabulka~\ref{tab:restaurantEngsmalltable} ukazuje nejlepší modely pro tento dataset. Modely DeBERTa měly také velmi dobré výsledky, ale na RoBERTa neuspěly. Model BERT ve verzi \emph{large} dosáhl solidních výsledků, avšak v porovnání s novějšími modely zaostával.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{model} & \textbf{přesnost} & \textbf{v. F1} & \textbf{m. F1} \\ \hline
+        bert-large-uncased & 84,76 & 84,80 & 80,13 \\ \hline
+        bert-large-uncasedQA & 83,93 & 83,77 & 79,25 \\ \hline
+        \textbf{roberta-base} & \bestscore{86,70} & \bestscore{86,72} & \bestscore{83,02} \\ \hline
+        roberta-baseQA & 85,04 & 84,83 & 79,94 \\ \hline
+        deberta-v3-base & \textbf{85,60} & \textbf{85,74} & \textbf{81,51} \\ \hline
+        deberta-v3-baseQA & 84,21 & 84,51 & 79,57 \\ \hline
+        \textbf{ModernBERT-large} & \bestscore{86,15} & \bestscore{85,74} & \bestscore{81,09} \\ \hline
+        ModernBERT-largeQA & \textbf{85,87} & \bestscore{85,74} & \textbf{81,08} \\ \hline
+    \end{tabular}
+    \caption[Recenze restaurací v angličtině -- malá tabulka]%
+    {Tabulka nejlepších modelů pro dataset Recenze restaurací v angličtině ukazující vyhodnocovací metriky na testovacích datech}
+    \label{tab:restaurantEngsmalltable}    
+\end{table}
+
+Z podrobnější tabulky~\ref{tab:restaurantEng1} je patrné, že čistě anglické modely dosahovaly velmi podobných výsledků v rozmezí 80,33~\% -- 86,70~\%. Vícejazyčné modely (mBERT a XLM-RoBERTa) vykazovaly horší výsledky než jejich čistě anglické varianty. Tabulka~\ref{tab:restaurantEng2} ukazuje výsledky trénování českých (slovanských) modelů, které opět měly horší výsledky než modely trénované na anglických datech. Testovací přesnost těchto modelů se pohybovala mezi 74,24~\% a 77,84~\%, což je o 6~\% až 9~\% horší než u modelů trénovaných na anglických datech. Zajímavé je, že rozdíl mezi přesností (nebo váženou F1) a macro F1 byl u jednotlivých modelů poměrně výrazný. Jelikož macro F1 testuje každou třídu (tedy každý sentiment) zvlášť, vykazuje horší výsledky u nevyvážených datasetů. Tento dataset obsahuje 60~\% dat s pozitivním sentimentem (viz graf~\ref{fig:SentimentDistribution}), což způsobuje, že metriky přesnosti a vážené F1, které se zaměřují na každý vzorek jednotlivě, vykazují vyšší hodnoty než macro F1.
+
+Modely trénované na doméně recenzí restaurací dosáhly mnohem lepších výsledků v praktických testech než modely z předchozí domény. Až 11 modelů mělo všechny odpovědi správné, včetně těch uvedených v tabulce~\ref{tab:restaurantEngsmalltable}. Dokonce i modely trénované na češtině měly uspokojivé výsledky, přičemž dva modely dosáhly 11 správných odpovědí z 12. I přes nevyváženost tohoto datasetu dosáhly modely na praktických testech vysoké úspěšnosti. Výsledky všech modelů na praktických testech jsou zobrazeny v tabulkách~\ref{tab:restaurantEng3} a~\ref{tab:restaurantEng4}.
+
+\subsection{Recenze restaurací -- čeština}
+Pro český dataset recenzí restaurací se nejlepší modely oproti předešlým datasetům mění, protože modely, které byly nejlepší na anglických datech, nemají vícejazyčné nebo české verze. Z vícejazyčných modelů měl nejlepší výsledky model typu XLM-RoBERTa, a to jak ve verzi \emph{base}, tak \emph{large}. U českých modelů byl nejúspěšnější FERNET-C5 (model typu BERT), který dosáhl stejné testovací přesnosti jako \emph{large} verze modelu XLM-RoBERTa. U vícejazyčných modelů měla metoda \emph{QA-M} nejlepší výsledky, zatímco u českého modelu byla lepší klasická metoda. Nejlepší modely jsou opět zobrazeny v menší tabulce~\ref{tab:restaurantCzsmalltable}. Zajímavé je, že z českých modelů měly lepší výsledky modely založené na BERTu než modely na architektuře RoBERTa, který by měl být vylepšenou verzí modelu BERT.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{model} & \textbf{přesnost} & \textbf{v. F1} & \textbf{m. F1} \\ \hline
+        xlm-roberta-base & \textbf{74,16} & \textbf{74,00} & \textbf{73,15} \\ \hline
+        \textbf{xlm-roberta-baseQA} & \bestscore{78,12} & \bestscore{78,21} & \bestscore{77,39} \\ \hline
+        xlm-roberta-large & \textbf{79,33} & \textbf{79,19} & \textbf{78,20} \\ \hline
+        \textbf{xlm-roberta-largeQA} & \bestscore{79,64} & \bestscore{79,74} & \bestscore{78,87} \\ \hline\hline
+        Czert-B-base-cased & \textbf{77,81} & \textbf{77,70} & \textbf{76,95} \\ \hline
+        Czert-B-base-casedQA & \textbf{77,51} & \textbf{77,12} & 75,98 \\\hline
+        \textbf{FERNET-C5} & \bestscore{79,64} & \bestscore{79,25} & \textbf{78,43} \\ \hline
+        FERNET-C5QA & \textbf{79,03} & \textbf{78,95} & \bestscore{78,45} \\ \hline
+    \end{tabular}
+    \caption[Recenze restaurací v češtině -- malá tabulka]%
+    {Tabulka nejlepších modelů pro dataset Recenze restaurací v češtině ukazující vyhodnocovací metriky na testovacích datech}
+    \label{tab:restaurantCzsmalltable}    
+\end{table}
+
+Z podrobnější tabulky~\ref{tab:restaurantCz1} je patrné, že vícejazyčné modely vykazují lepší výsledky než čistě anglické modely, které se nedokázaly efektivně vypořádat s českými daty. Zajímavou anomálií je model DeBERTa, který při použití metody \emph{QA-M} dosáhl na testovacích datech přesnosti 74,16~\%, čímž překonal vícejazyčný model BERT (mBERT) i model trénovaný na slovanských jazycích, SlavicBERT. Vícejazyčné modely měly testovací přesnost v rozmezí 72,64~\% až 79,64~\%, zatímco čistě anglické modely vykazovaly výsledky mezi 63,83~\% a 74,16~\%. České modely měly testovací přesnost mezi 74,77~\% a 79,64~\%, což je podobné výsledkům vícejazyčných modelů. Model SlavicBERT, trénovaný na více slovanských jazycích včetně češtiny, zaostával za čistě českými modely i vícejazyčnými modely. Podrobné výsledky českých modelů a SlavicBERTu jsou uvedeny v tabulce~\ref{tab:restaurantCz2}.
+
+V praktických testech byly opět nejlepší modely trénované na češtině a vícejazyčné modely. Celkem 5 modelů mělo všechny odpovědi správně, včetně modelů \emph{FERNET-C5} a \emph{xlm-roberta-base}, které vykázaly nejlepší testovací přesnost (a i F1 skóre). Jen \emph{large} verze modelu XLM-RoBERTa, která měla nejlepší testovací skóre, neprošla plným počtem bodů, protože na test \emph{R2} odpověděl špatně. Ale \emph{large} verze XML-RoBERTa trénovaná klasickou metodou 12 bodů dosáhla. Z českých modelů dosáhly 12 bodů také modely typu FERNET-C5-RoBERTa. Všechny ostatní české modely měly minimálně 9 správných odpovědí. Model DeBERTa, který měl poměrně vysokou testovací přesnost, měl 10 správných odpovědí, čímž konkuroval i českým modelům. Výsledky všech modelů na praktických testech jsou zobrazeny v tabulkách~\ref{tab:restaurantCz3} a~\ref{tab:restaurantCz4}.
+
+\subsection{Mediální články -- čeština}\label{MedVys}
+V datasetu mediálních článků byly opět nejlepší výsledky u vícejazyčných a českých modelů. Vícejazyčný model XLM-RoBERTa dosáhl v obou velikostech \emph{base} a \emph{large} nejlepších výsledků, a to při použití klasické metody. Z českých modelů měl nejlepší výsledky FERTET-C5-RoBERTa s metodou \emph{QA-M}, který dokonce překonal obě varianty XLM-RoBERTa. Další modely, které dosáhly dobrých výsledků, jsou zobrazeny v tabulce~\ref{tab:mediaCzsmalltable}. Model FERNET-C5, který byl úspěšný v předchozím datasetu, dosáhl také dobrých výsledků.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{model} & \textbf{přesnost} & \textbf{v. F1} & \textbf{m. F1} \\ \hline
+        \textbf{xlm-roberta-base} & \bestscore{92,25} & \bestscore{92,29} & \bestscore{92,28} \\ \hline
+        xlm-roberta-baseQA & 87,45 & 87,43 & 87,45 \\ \hline
+        \textbf{xlm-roberta-large} & \bestscore{94,10} & \bestscore{94,08} & \bestscore{94,08} \\ \hline
+        xlm-roberta-largeQA & \textbf{93,73} & \textbf{93,74} & \textbf{93,75} \\ \hline\hline
+        robeczech-base & \textbf{91,88} & \textbf{91,82} & \textbf{91,82} \\ \hline
+        robeczech-baseQA & 90,77 & 90,70 & 90,76 \\ \hline
+        FERNET-C5 & \textbf{92,62} & \textbf{92,59} & \textbf{92,61} \\ \hline
+        FERNET-C5QA & \textbf{92,25} & \textbf{92,27} & \textbf{92,30} \\ \hline
+        FERNET-C5-RoBERTa & 91,51 & 91,49 & 91,47 \\ \hline
+        \textbf{FERNET-C5-RoBERTaQA} & \bestscore{94,83} & \bestscore{94,83} & \bestscore{94,83} \\ \hline
+    \end{tabular}
+    \caption[Mediální články v češtině -- malá tabulka]%
+    {Tabulka nejlepších modelů pro dataset Mediální články v češtině ukazující vyhodnocovací metriky na testovacích datech}
+    \label{tab:mediaCzsmalltable}    
+\end{table}
+
+Z podrobnější tabulky~\ref{tab:mediaCz1} je patrný velký rozdíl mezi anglickými a vícejazyčnými modely. Vícejazykové modely měly testovací přesnost v rozmezí mezi 85,24~\% a 94,10~\%, zatímco anglické modely dosahovaly přesnosti pouze mezi 31,73~\% a 79,34~\%. Tyto výrazné rozdíly jsou způsobeny tím, že dataset mediálních článků obsahuje delší texty než předchozí dataset, což vedlo k problémům u některých anglických modelů, které se během 10 epoch trénování nedokázaly naučit správně rozpoznávat sentiment v jiném jazyce. Další problém spočíval v omezené maximální délce tokenizovaného textu na 256 tokenů, jak bylo uvedeno v sekci~\ref{datasetmedia}, přičemž většina anglických tokenizátorů měla tokenizované texty delší. To mohlo omezit schopnost modelů rozpoznat důležité aspekty v textu. Výsledkem bylo, že některé modely pouze tipovaly sentiment, což vedlo k přesnosti kolem 33~\%, což odpovídá náhodnému tipování mezi třemi možnostmi.
+
+České modely (a SlavicBERT) vykazovaly velmi podobné výsledky, přičemž jejich testovací přesnost se pohybovala mezi 88,93~\% a 94,83~\%. I ostatní metriky F1 skóre byly velmi podobné hodnotám přesnosti, protože tento dataset je vyvážený, jak ukazuje graf~\ref{fig:SentimentDistribution}. České modely neměly problém s délkou textu, protože byly schopny efektivně tokenizovat české texty tak, aby nepřekročily hranici 256 tokenů. Výsledky trénování českých modelů (a SlavicBERT) jsou uvedeny v tabulce~\ref{tab:mediaCz2}.
+
+Praktické testy pro tuto doménu byly zajímavé, protože pouze jednomu modelu se podařilo správně predikovat všechny odpovědi ve všech testech. Tím modelem byl \emph{robeczech-base}, který měl testovací přesnost (a obě F1 skóre) o 3~\% nižší než nejlepší model. Ostatní české modely v tabulce~\ref{tab:mediaCzsmalltable} měly správně 11 odpovědí. Všechny chyby se vyskytly ve stejném testu, \emph{L1}, který testoval část věty: \uv{Výkon je dobrý\dots} a ptal se na aspekt \emph{výkon}. Vícejazyčné modely měly rovněž problémy s praktickými testy, nejlepší model, který správně odpověděl na 11 z 12 testů, byl \emph{xlm-roberta-large}, který rovněž chyboval v testu \emph{L1}. Z tabulek~\ref{tab:mediaCz3} a~\ref{tab:mediaCz4} je zřejmé, že české a vícejazyčné modely měly problémy s testovou sadou L, která testovala recenze notebooků.
+
+\section{Porovnání použitých modelů a metod}  
+V předchozích sekcích byly uvedeny výsledky trénování na jednotlivých datasetech, přičemž pro každý dataset byl vybrán nejlepší model, který dosáhl nejlepších výsledků v dané doméně. Pro lepší přehlednost a výběr modelu, který by mohl zvládnout více domén, je nezbytné porovnat výsledky těchto modelů napříč různými datasety. Každý použitý dataset totiž obsahuje některé společné rysy s jinými, ať už jde o jazyk nebo tematické zaměření. Cílem této sekce je porovnat nejlepší modely pro jednotlivé datasety, a to nejen mezi sebou, ale i ve vztahu k použitým metodám trénování. Zároveň bude zhodnoceno, zda některá metoda (klasická nebo \emph{QA-M}) prokazuje výrazně lepší výsledky v určitých podmínkách.
+
+\subsection{Porovnání metod -- Klasická vs. QA-M}  
+Jak již bylo zmíněno, každý model, který byl natrénován na všech datasetech, byl trénován pomocí dvou metod. Jedna metoda poskytovala jako vstup jednu větu, zatímco druhá používala dvojici vět, přičemž jedna z nich byla otázkou týkající se sentimentu daného aspektu. Podrobnější popis těchto a dalších nepoužitých metod je uveden v sekci~\ref{VybMet}. Tato podsekce se zaměřuje na porovnání těchto dvou metod napříč všemi trénováními a hodnotí, zda některá z metod vykazuje lepší výsledky. K porovnání jsou využity všechny tabulky v příloze~\ref{appendix}.
+
+Celkově bylo natrénováno 56 modelů, přičemž každý z nich byl trénován oběma metodami, dohromady teda bylo vytvořeno 112 modelů. Z těchto 56 dvojic modelů dosáhl model trénovaný metodou \emph{QA-M} lepší testovací přesnosti ve 31 případech než model trénovaný klasickou metodou. Také na praktických testech měly modely trénované metodou \emph{QA-M} tendenci vykazovat lepší výsledky, celkově byly 18krát lepší a 15krát horší než modely trénované klasickou metodou. Často však docházelo k tomu, že model trénovaný metodou \emph{QA-M} měl sice lepší testovací přesnost, ale horší výsledky na praktických testech než stejný model trénovaný klasickou metodou.
+
+Rozdíly mezi těmito metodami nebyly výrazné a v mnoha případech byly výsledky téměř identické. Největší rozdíl, který byl zaznamenán, činil 8~\% u modelu \emph{xlm-roberta-base} na datasetu Recenze restaurací v angličtině. U tohoto modelu byl rovněž největší rozdíl v praktických testech, kde model trénovaný metodou \emph{QA-M} vykázal o 5 správných predikcí více. Pokud by model trénovaný klasickou metodou byl znova trénován, mohl by si zlepšit své výsledky, protože u předchozího datasetu měl tento model s oběma metodami velmi podobné výsledky.
+
+I když metoda \emph{QA-M} dosahovala lepších výsledků než klasická metoda, rozdíly nebyly dostatečně velké na to, aby metodě byla přičítána zásadní role. Dokonce bylo více modelů, které dosáhly nejlepších výsledků pro jednotlivé datasety, trénováno klasickou metodou. Z tohoto důvodu se ukazuje, že metoda nehraje tak významnou roli, jako výběr modelu.
+
+\subsection{Porovnání modelů na anglických datech}  
+Na anglických datech dosahovaly nejlepší výsledky novější modely. U obou datasetů byl model ModernBERT ve verzi \emph{large} vždy jedním z nejlepších modelů. Modely DeBERTa a RoBERTa měly rovněž velmi dobré výsledky, přičemž RoBERTa byl obzvláště úspěšný na datasetu Recenze restaurací, kde dokonce překonal i \emph{large} verzi modelu ModernBERT. Oba modely, DeBERTa a RoBERTa, mají také verzi \emph{large}, avšak vzhledem k tomu, že hlavním zaměřením této práce jsou data v češtině, nebyly tyto verze při trénování použity.
+
+Vícejazyčné modely, jako mBERT a XLM-RoBERTa, vykazovaly nižší výkon ve srovnání se svými čistě anglickými alternativami. U datasetu Recenze notebooků měl XLM-RoBERTa sice podobné výsledky jako RoBERTa, ale u druhého datasetu již neprokázal tak dobrý výkon. Tento výsledek je očekávaný, protože modely, které jsou trénovány na více jazycích, obvykle nezvládnou jednotlivý jazyk lépe než modely specializované na tento jazyk.
+
+České modely (a SlavicBERT) měly na anglických datech špatné výsledky, což bylo očekávané. Modely, které byly trénovány na jednom jazyce a následně použity pro analýzu textů v jiném jazyce, obvykle vykazují horší výkon, protože jejich tokenizátor je specializován na daný jazyk. Rozdíly v délce tokenizovaných textů mohou být značné, což ukazují grafy \ref{fig:LaptopToken} a \ref{fig:RestaurantToken}.
+
+Pro analýzu sentimentu v angličtině je tedy nezbytné používat modely, které byly trénovány na anglických datech, a ideálně by měly být specializované pouze na angličtinu pro lepší přesnost. Na základě pozorovaných výsledků je obtížné doporučit pouze jeden model, protože všechny vylepšené verze modelu BERT dosahovaly podobně dobrých výsledků. Doporučuje se tedy vyzkoušet všechny tři modely -- RoBERTa, DeBERTa a ModernBERT -- a testovat, jak se každý z nich chová na různých datasetech.
+
+\subsection{Porovnání modelů na různých jazycích}  
+Díky tomu, že pro češtinu i angličtinu existuje dataset recenzí restaurací, je možné porovnat výkonnost modelů v těchto dvou jazycích. Očekává se, že nejlepší modely pro tyto dva jazyky budou rozdílné, nicméně cílem je spíše zjistit, jak dobře si modely vedou v různých jazycích, a to včetně vícejazyčných modelů, které jsou testovány na obou jazycích.
+
+Vícejazyčné modely, konkrétně XLM-RoBERTa, vykazovaly podobné výsledky u obou jazyků. U anglického datasetu měl sice větší testovací přesnost, ale nižší macro F1 než u českého datasetu. Tento rozdíl je způsoben tím, že český dataset byl více vyvážený než anglický (viz graf~\ref{fig:SentimentDistribution}). Zajímavé je, že u obou datasetů měl model \emph{xlm-roberta-base}, trénovaný klasickou metodou, podstatně horší výsledky než stejný model trénovaný metodou \emph{QA-M}. To bylo vidět i na praktických testech, kde modely XLM-RoBERTa vykazovaly podobné výsledky v obou jazycích, přičemž opět \emph{base} verze trénovaná klasickou metodou měla mnohem méně správných odpovědí. Modely mBERT vykazovaly v obou datasetech horší výsledky než XLM-RoBERTa, přičemž tento rozdíl byl větší u českého datasetu.
+
+Zatímco české modely měly podobné výsledky jako XLM-RoBERTa, čistě anglické modely na anglickém datasetu dosahovaly výrazně lepších výsledků než vícejazyčný model, přibližně o 5~\%. České modely totiž nevyužívají novější modely, jako jsou DeBERTa a ModernBERT, a proto nemohly dosáhnout takových výsledků, aby překonaly XLM-RoBERTa na českých datech. Pro zlepšení výsledků pro český jazyk je nutné tyto nové modely trénovat čistě na českých datech, čímž by bylo možné využít nové architektury a dosáhnout tak lepších výsledků.
+
+Toto porovnání ukazuje, že i vícejazyčné modely, obvlášť XLM-RoBERTa, dosahují dostatečných výsledků, které v češtině dokonce konkurují modelům trénovaným pouze na českých datech. V angličtině sice vícejazyčný model není dostatečně silný, ale pokud vzniknou vícejazyčné verze novějších modelů (mDeBERTa již existuje, ale není podporováno pro češtinu), mohly by tyto nové vícejazykové modely konkurovat i těm nejlepším modelům trénovaným pouze na anglických datech.
+
+\subsection{Porovnání modelů na českých datech}
+Na českých datasetech dosahovaly nejlepších výsledků české a vícejazyčné modely. Jak už bylo uvedeno v předchozí podsekci, rozdíl mezi nimi však není velký. Nejčastěji se našel alespoň jeden čistě český model -- zejména některá varianta modelů FERNET -- jenž překonal \emph{base} verzi XLM-RoBERTa a výkonem se vyrovnal i variantě \emph{large}. Vzhledem k tomu, že české modely disponují přibližně čtvrtinovým počtem parametrů oproti XLM-RoBERTa, jde o výrazný úspěch. SlavicBERT podával stabilně solidní výkony, nikdy však nepřesáhl výsledky modelů FERNET.
+
+Naopak čistě anglické modely nebyly na českých datech úspěšné, zejména u delších textů v datasetu Mediální texty v češtině. Některé z nich nedokázaly zachytit ani základní strukturu a dosáhly přesnosti kolem 33~\%, což odpovídá náhodnému tipování. Důvody tohoto chování již byly rozebrány v části věnované výsledkům na mediálních textech (viz sekce~\ref{MedVys}). Pro češtinu tedy anglické modely nejsou vhodným řešením a je nezbytné volit modely, které se dokážou vyrovnat s českými specifiky.
+
+Lze proto doporučit, aby se pro česká data používaly modely přímo trénované na češtině. Přestože rozdíl mezi modelem XLM-RoBERTa a nejlepšími českými modely nebyl dramatický, v praxi je potřeba vyzkoušet více kandidátů a zvolit ten, který se na konkrétní doméně chová nejlépe. V obou českých datasetech si nejlépe vedly modely FERNET, jež v některých případech dosáhla stejných či dokonce lepších výsledků než \emph{large} varianta modelu XLM-RoBERTa. Ani další české modely -- Czert nebo RobeCzech -- však nepropadly, a zaslouží si podrobnější porovnání při aplikaci na jiné korpusy.
+
+\section{Shrnutí a doporučení}
+V rámci této práce bylo natrénováno celkem 112 modelů, které se lišily architekturou, trénovací metodou i datovou sadou. Byly zkoumány \emph{anglické}, \emph{české} a \emph{vícejazyčné} varianty, což umožnilo sledovat, jak si modely zaměřené na jeden jazyk vedou na datech v jiných jazycích a naopak. Kvůli limitacím trénovacího prostředí byl každý model natrénován pouze jednou a s jedinou sadou hyperparametrů. Pro důkladnější srovnání by bylo vhodné každý model opakovaně trénovat -- jak se stejnými, tak s různými hyperparametry -- a ověřit, zda některé modely v průměru překonávají ostatní a o kolik.
+
+Níže je uvedeno stručné zhodnocení dosažených výsledků a doporučení pro praktické nasazení v českých mediálních textech. Dále jsou porovnány vybrané velké jazykové modely (LLM) bez dodatečného přeučování, využívající jediný prompt k analýze sentimentu.
+
+\subsection{Anglické datasety}
+Nejlepší výsledky opakovaně vykazovaly čistě anglické modely
+z nejnovějších architektur -- ModernBERT, RoBERTa a DeBERTa.
+\begin{itemize}
+  \item Ve variantě \emph{large} dosáhl ModernBERT nejvyšší přesnosti na obou doménách (recenze notebooků, recenze restaurací).
+  \item Ve variantě \emph{base} byly rozdíly mezi trojicí ModernBERT / RoBERTa / DeBERTa nepatrné; vítěz se lišil podle domény.
+  \item Volba trénovací metody (\textbf{klasická} vs.~\textbf{QA-M}) výsledky významně neovlivnila, někdy byla lepší klasická a někdy QA-M metoda.
+\end{itemize}
+
+\subsection{České datasety}
+U českých korpusů se výkony českých a vícejazyčných modelů (hlavně XLM-RoBERTa, mBERT zaostával) velmi přibližovaly.
+\begin{itemize}
+  \item Modely \textbf{FERNET} (BERT i RoBERTa) konzistentně překonala \emph{base} verzi XLM‑RoBERTa a v některých případech se dotáhla i na její \emph{large} variantu, přestože má čtvrtinový počet parametrů.
+  \item Stejně jako v angličtině, ani zde nehrála trénovací metoda zásadní roli; rozdíly byly nepatrné.
+\end{itemize}
+
+\subsection{Doporučení pro české mediální texty}
+\begin{enumerate}
+  \item \textbf{Preferovat čistě české modely.}
+        Zaměřený tokenizátor lépe zvládá diakritiku a morfologii a efektivně tokenizuje delší texty.
+  \item \textbf{Vyzkoušet zejména modely FERNET.}
+        Varianta \emph{base} poskytuje výkon srovnatelný s mnohonásobně větší \emph{XLM-RoBERTa-large}, a přitom je podstatně úspornější.
+  \item \textbf{Dlouhé články segmentovat.}
+        Všechny české modely akceptují maximálně 512 tokenů; dlouhé mediální texty je nutné rozdělit do kratších pasáží, aby nebyly oříznuty.
+  \item \textbf{Metodu trénování volit podle možností.}
+        Rozdíly mezi klasickou a \emph{QA-M} metodou byly nepatrné, a tak lze preferovat jednodušší implementaci.
+  \item \textbf{Sledovat vývoj nových architektur.}
+        ModernBERT nabízí kontext 8192 tokenů, ale zatím není k dispozici v češtině; česká adaptace podobně \uv{dlouhých} encoderů by mohla dále zvýšit přesnost v mediální doméně.
+\end{enumerate}
+
+\subsection{Analýza sentimentu pomocí LLM}
+V dnešní době jsou velké jazykové modely (\emph{Large language models, LLM}) rozšířené a veřejně dostupné na internetu. Zatímco \emph{base} verze modelů použitých v této práci mají 110 -- 270 milionů parametrů, i nejmenší LLM zpravidla přesahují jednu miliardu parametrů a největší systémy, jako GPT-4 nebo Gemini Ultra, se pravděpodobně pohybují v řádu bilionů parametrů (angl. trillions). Tato čísla jsou však pouze odhady, protože většina společností jejich přesnou velikost neuvádí. Poslední oficiálně zveřejněný údaj se týkal modelu GPT-3, který má 178 miliard parametrů, tedy zhruba tisíckrát více, než má většina modelů použitých v této práci.~\cite{Joshparameters}
+
+\subsubsection{Popis modelů a použitého promptu}
+K porovnání bylo vybráno šest veřejně a zdarma dostupných LLM: ChatGPT 4o mini~\cite{ChatGPT}, Gemma 3 1B~\cite{Gemini2}, Qwen 2.5 Plus~\cite{Qwen}, DeepSeek~\cite{Deepseek}, Claude 3.7 Sonnet~\cite{Claude} a Phi‑4~\cite{phi4}. Záměrem bylo zvolit co nejmenší variantu, aby bylo srovnání s modely z této práce co nejpřesnější. Protože většina nástrojů počet parametrů nezveřejňuje, není možné spolehlivě ověřit, zda jde skutečně o nejmenší verzi.
+
+K vygenerování výsledků byl použit jediný prompt, který nejprve popsal úkol a následně předal aspekty ve formátu \uv{aspekt, aspekt} a text jako poslední informaci. Modely tedy hodnotily všechny aspekty v jedné odpovědi. Prompt byl česky pro české testy (ukázka \ref{code:prompt3}) a anglicky pro anglické testy (ukázka \ref{code:prompt4}).
+
+\begin{listing}[ht]
+\begin{minted}{python3}
+f"""Prosím proveď aspektovou analýzu sentimentu na níže vložený 
+text. Tvůj úkol je v textu detekovat předem dané aspekty a pak 
+následně k tim přiřadit správny sentiment. Nijak tvoje výsledky 
+nekomentuj, jen ke každému aspektu vrať jeden ze tří sentimentů 
+(negativní, neutrální a pozitivní).
+Aspekty: ..., ...
+Text: ..."""
+\end{minted}
+\caption[Ukázka promptu v češtině pro analýzu sentimentu]%
+{Ukázka promptu v češtině pro analýzu sentimentu u LLM, vlastní práce}
+\label{code:prompt3}
+\end{listing}
+
+\begin{listing}[ht]
+\begin{minted}{python3}
+f"""Please perform an aspect sentiment analysis on the text 
+below. Your task is to detect predetermined aspects in the text 
+and then assign the correct sentiment to them. Do not comment 
+on your results, just return one of the three sentiments 
+(negative, neutral, and positive) for each aspect.
+Aspects: ..., ...
+Text: ..."""
+\end{minted}
+\caption[Ukázka promptu v angličtině pro analýzu sentimentu]%
+{Ukázka promptu v angličtině pro analýzu sentimentu u LLM, vlastní práce}
+\label{code:prompt4}
+\end{listing}
+
+\subsubsection{Výsledky a závěr k LLM}
+Všechny modely úkol zvládly bez větších potíží. Jedinou výjimkou byl model Gemma 3 1B, který v anglických testech chybovala v testu \emph{M1} (neutrální sentiment) a v českých datech udělal tři chyby v testech \emph{L1}, \emph{M1} a \emph{O1}. Ostatní modely odpověděly ve všech případech správně, proto k nim není sestavena samostatná tabulka výsledků.
+
+Z toho plyne, že vybraná LLM zvládají aspektovou analýzu sentimentu spolehlivě, avšak jejich podstatně větší velikost (i nejmenší z nich má téměř desetkrát více parametrů než modely použité v této práci) je činí nepraktickými pro analýzu rozsáhlých datových souborů: delší doba predikce a vyšší výpočetní nároky znamenají vyšší provozní náklady oproti menším modelům.
+
+\section{Další výzkum}
+V této práci byla zkoumána pouze jedna dílčí úloha ABSA, konkrétně \emph{Aspect Sentiment Classification} (ASC), která předpokládá, že sledovaný aspekt je předem známý a pro něj se následně predikuje sentiment. V praxi však tato informace nemusí být dostupná, a modely natrénované v této práci by v takovém případě nebyly schopny sentiment určit. Z tohoto důvodu se nabízejí složené úlohy ABSA, například \emph{E2E-ABSA}, jež ke klasifikaci sentimentu nejprve z textu extrahuje aspekty, a lze ji tedy použít i na dosud neanalyzované texty. Další významnou úlohou je \emph{TASD}, kde je kromě sentimentu k aspektu predikována také kategorie, která aspekt přesněji charakterizuje.
+
+Limitem této práce je rovněž to, že každý model byl natrénován pouze jednou. Pro spolehlivější porovnání by bylo vhodné trénování opakovat s více náhodnými inicializacemi i různými sadami hyperparametrů.
+
+Budoucí výzkum se může soustředit právě na složené úlohy \emph{E2E-ABSA} a \emph{TASD}, aby bylo možné přesněji modelovat sentiment v situacích, kdy aspekty nejsou předem definovány. Kromě toho je žádoucí sledovat vývoj encoderových architektur, například odvozenin BERTu (jako je DeBERTa a ModernBERT), a soustavně trénovat nové modely na českých datech, čímž by se rozšířily zdroje pro další výzkum a praktické aplikace.

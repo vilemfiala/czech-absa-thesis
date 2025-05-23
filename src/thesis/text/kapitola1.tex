@@ -1,0 +1,155 @@
+\chapter{Zpracování jazyka pomocí umělé inteligence}\label{kapitola1}
+
+Umělá inteligence pronikla do téměř všech oblastí lidské činnosti -- od generování a úprav multimediálního obsahu až po sofistikované predikční úlohy. Jednou z nejviditelnějších aplikací je v posledních letech zpracování textu, tedy schopnost strojově analyzovat a vytvářet přirozený jazyk. Významný rozvoj výpočetních kapacit a metod strojového učení umožnil vznik rozsáhlých modelů, které v řadě lingvistických úloh dosahují až lidské úrovně.
+
+Tato kapitola nejprve představí základní principy zpracování přirozeného jazyka (NLP) a vymezí jeho roli v rámci širšího pole umělé inteligence. Následně se zaměří na jazykové modely jako klíčový nástroj praktického využití NLP. Popisuje jejich architektury i mechanismy učení, přičemž zvláštní pozornost je věnována modelům využitým v dalších částech této práce.
+
+\section{Zpracování přirozeného jazyka -- NLP}\label{NLP}
+
+\emph{Natural language processing} (NLP), v češtině zpracování přirozeného jazyka, spojuje poznatky z lingvistiky a umělé inteligence s cílem umožnit počítačům porozumět slovům a výrazům, jež lidé používají v běžném jazyce.~\cite{Khurana2023} Programovací jazyky (např.~C, C++ či Python) byly navrženy, aby programátoři mohli počítačům předávat přesné pokyny. Pro takovou komunikaci však musí člověk nejprve detailně zvládnout syntaxi a pravidla jazyka -- a i pak může drobná syntaktická či pravopisná chyba zabránit správnému provedení příkazu.
+
+S přirozeným jazykem je to ale složitější. Když se v běžné komunikaci udělá menší chyba, často si druhá strana s pomocí kontextu domyslí, co bylo myšleno. Pro počítač je takové \uv{domýšlení} mnohem obtížnější. Právě to je jeden z úkolů, jimiž se NLP zabývá: vyvinout modely či algoritmy, které dokážou porozumět lidské řeči (byť s chybami) a provést zadané pokyny.
+
+\subsection{Dvě základní složky NLP}
+NLP se obvykle dělí na dvě hlavní části:
+\begin{enumerate}
+  \item \emph{Natural Language Understanding} (NLU) -- pochopení přirozeného jazyka.
+  \item \emph{Natural Language Generation} (NLG)-- generování přirozeného jazyka.
+\end{enumerate}
+
+NLU umožňuje počítačům porozumět významu vět a slov, zachytit klíčové informace (např. emoce, zmíněné entity, hlavní témata) a rozpoznat, co je podstatou sdělení. NLG se naopak soustředí na tvorbu gramaticky a významově správných vět či textů.~\cite{Khurana2023} Tato práce se zaměřuje především na NLU, protože při analýze sentimentu -- tedy při zjišťování, jaký postoj daný text vyjadřuje -- se primárně texty zpracovávají a vyhodnocují,
+aniž by musely být generovány.
+
+\subsubsection{Pochopení přirozeného jazyka -- NLU}\label{NLU}
+
+Jak již bylo zmíněno, cílem NLU je naučit počítač porozumět psanému textu v přirozeném jazyce. K tomu se využívají poznatky z lingvistiky, která se dále dělí na několik rovin; každá zachycuje odlišný aspekt jazyka a společně popisují informace v něm obsažené. Níže je uveden jejich stručný přehled převzatý z díla~\cite{Khurana2023}:
+
+\paragraph{Fonologická rovina}
+Zabývá se zvukovou stránkou jazyka. Zkoumá, jak jsou zvuky uspořádány a jak ovlivňují význam v komunikaci. V praxi se tak sleduje, jak se hlásky v jazyce kombinují a jak rozdílné zvukové podoby mohou měnit či vyjadřovat význam.
+
+\paragraph{Morfologická rovina}
+Zkoumá vnitřní strukturu slov a jejich nejmenší významové jednotky, tzv. morfémy. Každé slovo může být rozloženo na různé morfémy (např. předpony, kořen, přípony), které společně nesou určitý význam. Morfémy mají také různé funkce, např. předpony mohou být slovotvorné nebo tvarotvorné.~\cite{ujc-prirucka} Tímto způsobem lze pochopit a analyzovat význam, který se skrývá už v samotné struktuře slova.
+
+\paragraph{Lexikální rovina}
+Zaměřuje se na význam jednotlivých slov a jejich přiřazení k odpovídajícím slovním druhům (\emph{part-of-speech} tag). Pokud se jedno slovo může v různých kontextech chovat například jako podstatné jméno i sloveso, je na základě okolního textu určeno, který slovní druh v dané situaci plní. Součástí analýzy je také dělení textu na věty a slova, odstranění stop slov (např. \uv{a}, \uv{ale}, \uv{že}), a využití technik \emph{stemming} a \emph{lemmatizace}.
+\begin{itemize}
+  \item \textbf{Stemming} odstraňuje koncové části slov a redukuje je na jejich základní kořen. Například slova \uv{vařený} nebo \uv{vařit} by se mohla stáhnout ke tvaru \uv{vař}.
+  \item \textbf{Lemmatizace} pracuje s jazykovými slovníky, aby identifikovala správný tvar slova včetně ohýbání či změn rodů a pádů (u slova \uv{vařil} či \uv{vařením} se hledá výchozí tvar \uv{vařit}).
+\end{itemize}
+
+\paragraph{Syntaktická rovina}
+Zkoumá gramatickou strukturu vět a určuje vztahy mezi slovy. Po přiřazení slovních druhů na lexikální úrovni se slova seskupují do frází, které pak tvoří věty (\emph{parsing}). Tento postup sleduje správné pořadí slov a vazby mezi nimi. Na rozdíl od předchozí úrovně neodstraňuje stop slova ani neužívá lemmatizaci či stemming, protože by tím mohl pozměnit gramatický význam.
+
+\paragraph{Sémantická rovina}
+Soustředí se na odhalení skutečného významu věty a na rozlišení možných interpretací. Zohledňuje nejen slovní zásobu, ale také kontext a vztahy mezi slovy. Díky tomu lze poznat, že text pojednává například o filmu, i když výslovně neobsahuje slovo \uv{film} (stačí pojmy jako \uv{herec}, \uv{režisér} nebo \uv{scénář}). Součástí této úrovně je i řešení slov s více významy.
+
+\paragraph{Diskurzní rovina}
+Zabývá se významovými souvislostmi napříč vícero větami a zajišťuje tak celkovou návaznost textu. Zaměřuje se především na vztahy mezi výrazy, aby bylo zřejmé, že určitý zájmeno či jiný jazykový prvek odkazuje na předchozí jméno nebo entitu. Tato analýza je důležitá pro pokročilé úlohy, jako je automatická sumarizace či extrakce informací, protože pomáhá správně určit, kdo nebo co je v textu zmíněno.
+
+\paragraph{Pragmatická rovina}
+Zkoumá, jaký vliv na porozumění má kontext a reálné znalosti o světě, jež nejsou přímo obsaženy v textu. Soustředí se na to, co mluvčí skutečně zamýšlí říct a jak posluchač dané sdělení interpretuje na základě širších souvislostí. Díky pragmatické analýze lze rozlišit například, zda otázka \uv{Víte, kolik je hodin?} slouží k zjištění času, nebo spíše vyjadřuje nespokojenost se zpožděním. Tato rovina tak doplňuje čistě jazykové rozbory o význam, který se odvozuje i z mimojazykových faktorů.~\cite{Khurana2023}\\[0.3em]
+
+Cílem zpracování přirozeného jazyka (NLP) je často sladit několik různých rovin tak, aby algoritmus či systém dokázal efektivně porozumět textu. Velkou výzvou přitom často bývá nejen kombinace více rovin, ale i řešení nejednoznačností, které se nejčastěji objevují v syntaktické, sémantické či lexikální rovině.~\cite{Khurana2023}
+
+\subsection{Problematika vícejazyčného zpracování}\label{NLPjazyky}
+
+Při zpracování přirozeného jazyka vychází každá lingvistická rovina z odlišných pravidel a charakteristik konkrétního jazyka. Rozdíly se týkají například abeced, směru psaní, výslovnosti, gramatiky, tvorby slov či struktury vět. Neexistuje proto jediné univerzální řešení, které by fungovalo stejně dobře pro všechny jazyky.
+
+Tato práce se zaměřuje zejména na češtinu a angličtinu. Vzhledem k obrovskému rozšíření angličtiny -- podle statistik W3Techs přes 49\,\% webových stránek používá angličtinu jako základní jazyk (oproti 1\,\% v češtině)~\cite{w3techs-stats} -- je pro ni dostupné výrazně větší množství dat a zdrojů k trénování modelů. V českém prostředí je naopak často obtížnější získat dostatečně rozsáhlé a kvalitní datasety, což může omezovat přesnost metod vyvíjených pro češtinu.
+
+\subsection{Využití NLP v praxi}
+
+V předchozích částech byly popsány vlastnosti NLP a principy jeho jazykové analýzy. Metody NLP nacházejí široké uplatnění a dokážou zefektivnit celou řadu úkolů. Níže jsou uvedeny některé příklady, které tato práce dále podrobněji nerozebírá. Analýza sentimentu, na niž je tato práce soustředěna, bude předmětem kapitoly~\ref{sentiment}. Jednotlivé typy využití byly též zmíněny v díle~\cite{Khurana2023}:
+
+\paragraph{Strojový překlad}
+Umožňuje automatické převádění textů z jednoho jazyka do druhého. Kromě samotného překladu slov se klade důraz na zachování významu, gramatických vazeb i kontextu, aby byl výsledný text srozumitelný a co nejbližší originálu.
+
+\paragraph{Kategorizace textu}
+Slouží k automatickému třídění rozsáhlých množství dokumentů (např. zprávy, oficiální spisy, tržní data) do předem definovaných kategorií. Urychluje vyhledávání a usnadňuje následné zpracování velkých datových souborů.
+
+\paragraph{Extrakce informací}
+Cílem je rozpoznat a vytáhnout důležité prvky z textu, například jména osob, místa či události. Tato informace se dále využívá pro sumarizaci, budování databází nebo jako vstup pro další analýzy.
+
+\paragraph{Sumarizace}
+Z textu se automaticky vytváří kratší přehled, který vystihuje klíčové informace. Umožňuje rychlé seznámení s obsahem rozsáhlých dokumentů či vícero zdrojů najednou.
+
+\paragraph{Dialogové systémy}
+Zahrnují chatovací asistenty nebo hlasové pomocníky. Na základě jazykové analýzy rozumějí dotazům uživatele a generují odpovědi nebo vykonávají zadané úkoly (například vyhledání informací či nastavení budíku).~\cite{Khurana2023}
+
+\section{Jazykové modely -- LM}\label{LM}
+V předchozí sekci~\ref{NLP} bylo naznačeno, jakým způsobem může být poskytnuta možnost pro běžného uživatele komunikovat se systémem v přirozeném jazyce, a jak se počítač pokouší porozumět zadaným pokynům. Nastává však otázka, jakým způsobem takovou komunikaci reálně implementovat a jak naprogramovat modely, které dokážou zpracovávat a analyzovat text prostřednictvím NLP. Tato problematika je řešena pomocí LM (\emph{Language models}, česky jazykové modely).
+
+Pojem \emph{jazykové modely} je velmi obecný a zahrnuje řadu přístupů s různou hloubkou i rozsahem. Starší definice často zmiňují nástroj, který na základě rozsáhlé databáze textů přiřazuje větám či slovům určitou pravděpodobnost. Jde tedy o systém, jenž vychází z trénovacího korpusu a následně posuzuje, jak „pravděpodobná“ je daná sekvence slov. Lze si jej představit jako komplexní vyhledávací databázi, která na základě podobností generuje možné textové výstupy.~\cite{Hiemstra2009}
+
+Moderní přístupy staví zejména na neuronových sítích. Ty se po zpracování velkého množství dat naučí strukturu a generování textu efektivněji než tradiční statistické metody.~\cite{Wei_2024} Přesto zůstává základní myšlenka stejná: cílem je naučit se pravděpodobnostní rozdělení jazykových jednotek (například slov a vět), a to tak, aby model dokázal předvídat či tvořit text na základě naučeného kontextu.
+
+Tyto dvě definice společně ukazují dva hlavní přístupy, jak k tvorbě jazykových modelů lze přistupovat:~\cite{Wei_2024, zhou2023comprehensivesurveypretrainedfoundation}
+
+\begin{itemize}
+    \item \textbf{Statistický (klasický) přístup} -- založený na myšlence, že pravděpodobnost určitého slova závisí na jeho předchozím kontextu. Cílem je sestavit pravděpodobnostní rozdělení nad posloupnostmi slov pomocí četností v trénovacím korpusu. Mezi známé statistické přístupy patří např. N-gram modely~\cite{brown-etal-1992-class}.
+    \item \textbf{Neuronový (data-driven) přístup} -- vychází z trénování neuronové sítě. Model se učí přímo z velkých objemů neupravených dat, čímž si buduje bohatou představu o slovech, frázích i kontextu. Mezi známe patří GPT~\cite{radford2018improving} a BERT~\cite{devlin2019bert}.
+\end{itemize}
+
+Toto rozdělení nás přivádí k rozlišení CLMs (\emph{Conventional Language Models}, česky konvenční či klasické jazykové modely) a PLMs (\emph{Pre-trained Language Models}, česky předtrénované jazykové modely)~\cite{Wei_2024}. Tato práce se zaměří na PLMs, jelikož klasické statistické metody (CLMs) se dnes téměř nepoužívají a zároveň je velmi snadné PLMs implementovat či dotrénovat pomocí dostupných nástrojů, například prostřednictvím webového portálu Hugging Face~\cite{huggingface}.
+
+Než budou představeny PLMs, je nejprve nutné text vhodně předzpracovat. Počítače totiž dokážou efektivněji ukládat slova, než aby si pamatovaly každý jednotlivý znak. K tomuto účelu slouží tokenizace.
+
+\subsection{Tokenizace}
+Než model začne zpracovávat text a učit se jeho strukturu, je třeba rozhodnout, v jaké formě bude tento text zpracovávat. Měl by text chápat jako lidé, tedy rozdělovat ho na slova, nebo i na víceslovné výrazy? A nebo jej rozdělit kompletně na jednotlivá písmena? To jsou otázky, kterými se vědci a programátoři zabývají již dlouho (viz studie z roku 1992~\cite{webster-kit-1992-tokenization}).
+
+Donedávna většina modelů pro NLP používala slova jako hlavní jednotku textu, ale s příchodem byte-pair encoding (BPE) se přešlo na části slov, tedy na \emph{tokeny}. Díky tokenům se daly zmenšit slovníky modelů, aniž by došlo ke ztrátě důležitých informací. Tokeny mají více definic, ale obecně lze říci, že se jedná o tzv. \emph{typografickou jednotku}, která je pro model nejlogičtější pro zpracování~\cite{mielke2021wordscharactersbriefhistory}.
+
+\subsubsection{Tokeny v různých jazycích}\label{TokenJaz}
+Jak již bylo naznačeno v podsekci~\ref{NLPjazyky}, každý jazyk má odlišnou gramatiku a pravidla, což se odráží i na způsobu tokenizace. Některé jazyky je možné snadněji převést na tokeny, zatímco u jiných bude potřeba více tokenů pro zachování významu jednoho slova.
+
+Například záleží, zda jazyk obsahuje pády, či nikoli. V jazycích s pády, jako je čeština, jedno slovo může být reprezentováno více tokeny v závislosti na kontextu. Jednoduchým příkladem je slovo \uv{ty} v češtině a \uv{you} v angličtině. V angličtině zůstává \uv{you} vždy stejné, zatímco v češtině bude záviset na pádu -- může to být například ve 2. pádu \uv{tebe}, ve 3. pádu \uv{tobě} a tak dále. Tento faktor způsobuje, že slovník tokenů pro češtinu bude mnohem větší než pro angličtinu.
+
+V článku~\cite{tokenizacemultilingual} autorka zkoumá, jak funguje tokenizace v různých jazycích. Jako příklad je uvedena věta: \uv{Jaké bude počasí příští týden}, která byla analyzována v pěti různých jazycích. V angličtině a španělštině měla tato věta 7, respektive 8 tokenů, zatímco v barmštině (jazyk v Myanmaru) a amharštině (jazyk v Etiopii) měla 61, respektive 69 tokenů, což je téměř desetkrát více. Podrobnější popis této problematiky je uveden v již zmíněném článku~\cite{tokenizacemultilingual}.
+
+\subsection{Předtrénované jazykové modely -- PLMs}\label{PLMs}
+Předtrénované jazykové modely patří v současné době mezi nejvyužívanější nástroje v oblasti NLP. Jedná se o rozsáhlé neuronové sítě založené na transformátorové architektuře, které lze nasadit na širokou škálu úloh. Velká část jejich schopností vychází z faktu, že jsou nejprve natrénovány na rozsáhlých a různorodých korpusech, kde si osvojují znalost syntaxe, sémantiky a dalších jazykových jevů (viz též \ref{NLU}). Poté lze modely jemně doladit (tzv. \emph{fine-tuning}) pro specifické použití.~\cite{Wei_2024, zhou2023comprehensivesurveypretrainedfoundation, min2021recentadvancesnaturallanguage, Elazar2021}
+
+V této práci bude takový typ modelů využit pro úlohu rozpoznávání sentimentu. Díky již nabyté znalosti struktury textu v češtině i angličtině postačí model následně specializovaně dotrénovat tak, aby přesně klasifikoval náladu či postoj vyjádřený v daném textu, a to na základě vybraného trénovacího datasetu.
+
+V následujících podsekcích jsou popsány stěžejní vlastnosti předtrénovaných jazykových modelů (PLM). Nejprve je představena jejich architektura, poté je přiblížen postup samotného předtrénování a nakonec je ukázáno, jak lze tyto modely doladit (\emph{fine-tuning}) pro konkrétní úlohy.
+
+\subsubsection{Transformátorová architektura}\label{Transformator}
+Transformátor~\cite{vaswani2023attentionneed} představuje vylepšenou architekturu oproti rekurentním a konvolučním neuronovým sítím a postupně je nahradil v mnoha úlohách. Místo rekurence pracuje pouze s \emph{mechanismem pozornosti} (attention mechanism), který dokáže zachytit globální závislosti mezi vstupem a výstupem. Díky tomu je velmi flexibilní (tzv. vysoce parametrizovatelná) a umožňuje vznik pokročilých modelů, jako jsou například GPT~\cite{radford2018improving} nebo BERT~\cite{devlin2019bert}.
+
+Funkci pozornosti lze popsat jako mapování dotazu a sady klíč--hodnota na výstup, který je váženým součtem hodnot, váhy se odvozují z porovnání dotazu s příslušným klíčem. Namísto jedné takovéto pozornosti používá transformátor tzv. \emph{multi-head attention}, jež poskytuje bohatší pohled na reprezentaci dat. Detailní popis \emph{multi-head attention} i celé transformátorové architektury lze nalézt v původní práci~\cite{vaswani2023attentionneed}.
+
+\subsubsection{Předtrénování}\label{predtrenovani}
+Předtrénování je klíčovou součástí moderní přípravy modelů. Dnes už není nutné trénovat každý model od začátku; místo toho stačí využít předtrénovaný model, který si lze stáhnout z dostupných portálů (například již zmíněného Hugging Face~\cite{huggingface}), a následně ho dotrénovat na specifický úkol pomocí menšího datasetu. Díky tomu, že byly modely natrénovány na rozsáhlých a různorodých datech, dokážou zachytit nuance v různých jazycích a efektivně reagovat na úkoly.
+
+Existuje mnoho metod předtrénování, které závisí na konkrétní úloze, pro kterou je model připravován. Nejznámější a nejčastěji používanou metodou je \emph{missing token prediction} (predikce chybějícího tokenu). Kromě této metody existuje i řada dalších přístupů, jako např. \emph{next-sentence prediction} (predikce následující věty) nebo \emph{replaced token prediction} (predikce vyměněného tokenu).~\cite{Wei_2024, zhou2023comprehensivesurveypretrainedfoundation}
+
+\paragraph{Missing token prediction}
+Tento typ trénování využívají jak autoregresní jazykové modely (např. GPT~\cite{radford2018improving}), tak i maskované jazykové modely (např. BERT~\cite{devlin2019bert}). Cílem je pomocí určitých tokenů (slov) predikovat okolní nebo následující tokeny. Maskované jazykové modely jsou trénovány tak, že se přibližně 15\% tokenů zamaskuje a pomocí zbytku se model snaží tyto maskované tokeny predikovat. U autoregresivních jazykových modelů se na základě dané sekvence tokenů predikuje následující token v řadě. Hlavní rozdíl spočívá v tom, že první typ modelu predikuje tokeny v závislosti na všech dostupných, což zlepšuje celkový přehled o struktuře textu. Druhý přístup je vhodnější pro generaci slov, protože na základě určitých tokenů dokáže model vygenerovat zbytek textu.~\cite{Wei_2024, min2021recentadvancesnaturallanguage}
+
+\paragraph{Další metody předtrénování}
+Jak již bylo zmíněno, existuje řada dalších metod předtrénování. \emph{Next-sentence prediction} vybírá dvě věty a predikuje, zda druhá věta skutečně následuje po té první, čímž ověřuje správnost jejich pořadí. \emph{Replaced token prediction} se zaměřuje na kontrolu, zda byly některé tokeny v textu vyměněny. Podrobnější popis těchto metod a dalších je k nalezení v těchto studiích~\cite{Wei_2024, zhou2023comprehensivesurveypretrainedfoundation}.
+
+\subsubsection{Fine-tuning}
+V předchozí podsekci~\ref{predtrenovani} bylo popsáno, proč je předtrénování klíčové a jak model získává základní znalost jazyka. Fine-tuning (dotrénování) tento již existující model přizpůsobuje konkrétnímu úkolu, například klasifikaci sentimentu nebo rozpoznávání pojmenovaných entit.  
+
+Nejběžnější přístup spočívá v tom, že se celý model znovu trénuje (resp. aktualizují se všechny jeho vrstvy) na menším datasetu určeném pro danou úlohu. Nevýhodou takového postupu ale je, že i při malé změně úkolu je nutné trénovat model od začátku, což je výpočetně náročné.~\cite{Wei_2024, min2021recentadvancesnaturallanguage}
+
+Proto se často používá tzv. \emph{Adapter tuning}~\cite{pfeiffer-etal-2021-adapterfusion, houlsby2019parameterefficienttransferlearningnlp}, při němž se do modelu přidají speciální vrstvy (adapters) s relativně malým počtem parametrů. Během trénování se upravují pouze tyto adaptéry, zatímco původní parametry modelu zůstávají beze změny. Díky tomu lze jeden předtrénovaný model efektivně použít pro více odlišných úkolů, neboť stačí vyměnit jen konkrétní adaptéry místo kompletního přeučování celého modelu.~\cite{Wei_2024, min2021recentadvancesnaturallanguage} Pro rozsáhlé modely jako GPT-3, který má 175 miliard parametrů~\cite{brown2020languagemodelsfewshotlearners}, je tento přístup časově i výpočetně výrazně úspornější.
+
+\subsection{Decoder vs Encoder}\label{DECENC}
+
+V podsekci~\ref{predtrenovani} byly představeny dva rozdílné přístupy k trénování jazykových modelů. Modely trénované prvním přístupem jsou označovány jako \emph{autoregresivní jazykové modely}, zatímco druhým jako \emph{maskované jazykové modely}. Toto rozdělení vede k modelům \emph{Decoder-only} a \emph{Encoder-only}, které se liší nejen v přístupu k trénování, ale i v architektuře transformátoru. Architektura transformátoru obsahuje strukturu \emph{encoder-decoder}, kterou lze rozdělit na dvě samostatné komponenty~\cite{vaswani2023attentionneed}. Tato možnost vedla k vytvoření modelů jako je GPT~\cite{radford2018improving}, které využívají pouze decoder, a BERT~\cite{devlin2019bert}, který využívá pouze encoder.
+
+\subsubsection{Decoder-only modely}
+Díky velkému nárůstu zájmu o LLMs~\cite{minaee2025largelanguagemodelssurvey, naveed2024comprehensiveoverviewlargelanguage} (\emph{Large language models}, česky velké jazykové modely) se v současnosti věnuje většina pozornosti decoder-only neboli \emph{generativním modelům}. Ty dokážou generovat texty působící jako lidské a zvládají interaktivní konverzaci. Na encoder-only modely se přitom často zapomíná.~\cite{modernbertreplacment}
+
+Současné generativní modely jsou však obvykle velmi rozsáhlé, pomalé a nákladné pro většinu úkolů. Přestože zvládnou všechno, co encoder-only modely a ještě více, existují situace, kdy je potřeba zpracovávat úlohy rychle a ve velkém množství. V takových případech je vhodnější menší model s nižšími nároky na výpočetní zdroje. Proto mají encoder-only modely stále své místo a praktické využití.~\cite{modernbertreplacment}
+
+\subsubsection{Encoder-only modely}
+
+Výstup encoder-only modelů není text (jako u decoder-only modelů), nýbrž seznam hodnot (tzv. \emph{embedding vector}). Místo generování slov tedy model svou odpověď \uv{zakóduje} do vektorové reprezentace, jež lze následně interpretovat nebo použít v jiné nadstavbové úloze. Proto se encoder-only modely někdy označují jako \emph{reprezentační modely}~\cite{modernbertreplacment}.
+
+Jak již bylo zmíněno, decoder-only modely mohou v principu plnit stejnou funkci jako encoder-only modely, avšak při čistě analytických úkolech může být jejich autoregresivní charakter nevýhodou. Encoder-only modely, díky jejich architektuře, jsou vhodnější pro rychlé a rozsáhlé analýzy textu, ať už jde o klasifikaci, detekci entit nebo jiné úlohy. Další přednosti encoder-only modelů jsou podrobně rozebrány například v blogu o modelu ModernBERT~\cite{modernbertreplacment}.
+
+\subsubsection{Jaký model pro sentiment?}
+Jelikož je v této práci hlavním cílem analyzovat sentiment textu, není nutná jeho generace. Stačí tedy číselná reprezentace, která vyjádří, jaký sentiment daný text má. Z tohoto důvodu jsou v této práci využity \emph{encoder-only} modely, konkrétně BERT~\cite{devlin2019bert} a jeho následné varianty, jako např. RoBERTa~\cite{liu2019robertarobustlyoptimizedbert} či ModernBERT~\cite{warner2024smarterbetterfasterlonger}.
