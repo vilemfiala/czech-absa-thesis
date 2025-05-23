@@ -1,4 +1,4 @@
-Tento adresář obsahuje tři hlavní složky: 'data', 'src' a 'text'.
+Tento adresář obsahuje tři hlavní složky: 'data', 'models', 'src' a 'text'.
 
 'data/'
   – datové sady použité při trénování jednotlivých modelů.
