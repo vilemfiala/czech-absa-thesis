@@ -1,9 +1,10 @@
-# Bakalářské práce
+# Bakalářská práce
 
 Tento repozitář obsahuje moji bakalářskou práci, s názvem *Analýza textu s využitím aspektové analýzy sentimentu a pokročilých metod NLP*. 
 
 Jsou zde jen zdrojové kódy.
 Natrénované modelu jsou dostupné na tomto **[Google Disku](https://drive.google.com/drive/folders/12n4iub96XM-l5eNyVQbMEXZkoX4ytA68?usp=sharing)**.
+
 
 Tento adresář obsahuje tři hlavní složky: 'data', 'src' a 'text'.
 
