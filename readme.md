@@ -6,7 +6,7 @@ Jsou zde jen zdrojové kódy.
 Natrénované modelu jsou dostupné na tomto **[Google Disku](https://drive.google.com/drive/folders/12n4iub96XM-l5eNyVQbMEXZkoX4ytA68?usp=sharing)**.
 
 
-Tento adresář obsahuje tři hlavní složky: 'data', 'src' a 'text'.
+Tento adresář obsahuje tři hlavní složky: `data`, `src` a `text`.
 
 - `data/`
   - datové sady použité při trénování jednotlivých modelů.
@@ -17,4 +17,4 @@ Tento adresář obsahuje tři hlavní složky: 'data', 'src' a 'text'.
   - `thesis/`  – zdrojové soubory práce ve formátu LaTeX.
 
 - `text/`
-  - finální verze práce ve formátu PDF ('thesis.pdf').
+  - finální verze práce ve formátu PDF (`thesis.pdf`).
